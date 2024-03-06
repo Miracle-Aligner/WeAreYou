@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Almaz', serif;
+  src: url('../fonts/almaz-medium-webfont.woff2') format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Almaz ExtraBold', serif; 
+  src: url('../fonts/almaz-extrabold-webfont.woff2') format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Noto Regular Set */
+@font-face {
+  font-family: 'Noto Sans', sans-serif; 
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('Noto Sans'), url('../fonts/NotoSans-Regular-cyrillic.woff2') format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Repeat for each @font-face block, adjusting the src and unicode-range as needed */
+
+/* Noto Medium Set */
+@font-face {
+  font-family: 'Noto Sans', sans-serif; /* Example value for $ff-body-name */
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local('Noto Sans'), url('../fonts/NotoSans-Medium-cyrillic.woff2') format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Repeat for each @font-face block, adjusting the src and unicode-range as needed */
+
+/* Noto Bold Set */
+@font-face {
+  font-family: 'Noto Sans', sans-serif; /* Example value for $ff-body-name */
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('Noto Sans'), url('../fonts/NotoSans-Bold-cyrillic.woff2') format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Repeat for each @font-face block, adjusting the src and unicode-range as needed */
