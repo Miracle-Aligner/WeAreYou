@@ -11,7 +11,49 @@
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	</head>
 	<body class="">
-		<div class="container-fluid header_container">
+        <nav class="p-md navbar navbar-dark navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="LOGO" height="30"> <!-- Ensure the path to logo is correct -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto display_bold">
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline" href="#teaser">Teaser</a>
+                        </li>
+                        <li class="nav-item hover-underline">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item hover-underline">
+                            <a class="nav-link" href="#screenings">Screenings</a>
+                        </li>
+                        <li class="nav-item hover-underline">
+                            <a class="nav-link" href="#charity">Charity</a>
+                        </li>
+                        <li class="nav-item hover-underline">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item hover-underline">
+                            <a class="nav-link" href="#saveED">SaveED</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eng</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#eng">Eng</a></li>
+                                <li><a class="dropdown-item" href="#ukr">Укр</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" href="#register">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		<div class="container-fluid header_container p-md-b">
 			<div class="row no-gutters header align-items-end">
 				<!-- Use 'align-items-end' to align the content to the bottom -->
 				<div class="col">
@@ -21,54 +63,15 @@
 							Teens who give us hope
 						</div>
 						<div class="display_normal caption">Documentary film presentation</div>
+                        <br>
+                        <a class="btn btn-primary d-block d-md-none display_bold" href="#register">Register</a>
 					</div>
-					<nav class="p-md navbar navbar-dark navbar-expand-lg">
-						<div class="container-fluid">
-							<a class="navbar-brand" href="#">
-								<img src="img/logo.png" alt="LOGO" height="30"> <!-- Ensure the path to logo is correct -->
-							</a>
-							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarResponsive">
-								<ul class="navbar-nav ms-auto display_bold">
-									<li class="nav-item">
-										<a class="nav-link hover-underline" href="#teaser">Teaser</a>
-									</li>
-									<li class="nav-item hover-underline">
-										<a class="nav-link" href="#about">About</a>
-									</li>
-									<li class="nav-item hover-underline">
-										<a class="nav-link" href="#screenings">Screenings</a>
-									</li>
-									<li class="nav-item hover-underline">
-										<a class="nav-link" href="#charity">Charity</a>
-									</li>
-									<li class="nav-item hover-underline">
-										<a class="nav-link" href="#projects">Projects</a>
-									</li>
-									<li class="nav-item hover-underline">
-										<a class="nav-link" href="#saveED">SaveED</a>
-									</li>
-									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eng</a>
-										<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-											<li><a class="dropdown-item" href="#eng">Eng</a></li>
-											<li><a class="dropdown-item" href="#ukr">Укр</a></li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="btn btn-primary" href="#register">Register</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</nav>
+					
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid" id="teaser">
-			<div class="row teaser align-items-center justify-content-center">
+			<div class="row teaser align-items-center justify-content-center p-md">
 				<div class="text-center col-md-8 embed-responsive embed-responsive-4by3">
 					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/C5Gm8UvxKlU" allowfullscreen></iframe>
 				</div>
@@ -85,11 +88,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 part-2 d-flex justify-content-center align-items-center">
+				<div class="col-sm-12 col-md-6 part-2 d-flex justify-content-center align-items-center p-md-top">
 					<div class="container">
 						<div class="row w-100 align-items-center mb-5">
 							<!-- Make row a flex container with centered items -->
-							<div class="col-sm-12 col-md-5" style="text-align: right;">
+							<div class="col-sm-12 col-md-5 stats">
 								<p class="highlight stats-number">
 									3500
 								</p>
@@ -104,7 +107,7 @@
 						</div>
 						<div class="row w-100 align-items-center mb-5">
 							<!-- Make row a flex container with centered items -->
-							<div class="col-sm-12 col-md-5" style="text-align: right;">
+							<div class="col-sm-12 col-md-5 stats">
 								<p class="highlight stats-number">
 									400
 								</p>
@@ -119,7 +122,7 @@
 						</div>
 						<div class="row w-100 align-items-center">
 							<!-- Make row a flex container with centered items -->
-							<div class="col-sm-12 col-md-5" style="text-align: right;">
+							<div class="col-sm-12 col-md-5 stats">
 								<p class="highlight stats-number">
 									1 in 7
 								</p>
@@ -234,9 +237,9 @@
 			<!-- Swiper Pagination -->
 			<div class="swiper-pagination"></div>
 		</div>
-		<div class="featured-location p-md-l" id="charity">
+		<div class="featured-location" id="charity">
 			<div class="row no-gutters">
-				<div class="col-sm-12 col-md-6 part-1">
+				<div class="col-sm-12 col-md-6 part-1 p-md">
 					<div class="text-left">
 						<h2 class="highlight display_bold">Mariupol <br>Lyceum</h2>
 						<div class="location-desc">
@@ -245,15 +248,15 @@
 							The students live in a boarding school set up, spending the week in the educational institution and going home on weekends. Currently, 278 students, not only from Mariupol but also from other temporarily occupied cities, are receiving education there.<br><br>
 							<b>Our goal is to improve the living conditions for these children, ensuring they can learn and live comfortably in the relocated lyceum.</b>
 						</div>
-						<a class="btn btn-primary" href="#donate">Donate</a>
+						<a class="btn btn-primary display_bold" href="#donate">Donate</a>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 part-2 d-flex justify-content-center align-items-center">
+				<div class="col-sm-12 col-md-6 part-2 d-flex justify-content-center align-items-center p-md-l">
 					<img src="./img/featured_loc_1.png" alt="" class="location-illustration">
 				</div>
 			</div>
 		</div>
-		<div class="screenings-section" id="screenings">
+		<div class="screenings-section screenings-section-md md" id="screenings">
 			<h2 class="display_bold p-md-l">Screenings</h2>
 			<div class="swiper screenings-swiper">
 				<div class="swiper-wrapper">
@@ -356,6 +359,61 @@
 										13 April 2024
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Swiper Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+        <div class="screenings-section screenings-section-mobile mobile p-md-l" id="screenings">
+			<h2 class="display_bold">Screenings</h2>
+			<div class="swiper people-gallery display_bold">
+				<div class="swiper-wrapper">
+					<!-- Swiper Slide (Repeat for each card) -->
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="card-color-top" style="background-image: url(./img/s_london.png);"></div>
+							<div class="card-body">
+								<h5 class="card-title">London</h5>
+								<p class="card-text">UK<br>14 March 2024</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="card-color-top" style="background-image: url(./img/s_oxford.png);"></div>
+							<div class="card-body">
+								<h5 class="card-title">Oxford</h5>
+								<p class="card-text">UK<br>15 March 2024</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="card-color-top" style="background-image: url(./img/s_ucl.png);"></div>
+							<div class="card-body">
+								<h5 class="card-title">UCL</h5>
+								<p class="card-text">UK<br>18 March 2024</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="card-color-top" style="background-image: url(./img/s_lse.png);"></div>
+							<div class="card-body">
+								<h5 class="card-title">LSE</h5>
+								<p class="card-text">UK<br>19 March 2024</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="card-color-top" style="background-image: url(./img/s_ny.png);"></div>
+							<div class="card-body">
+								<h5 class="card-title">New-York</h5>
+								<p class="card-text">USA<br>13 April 2024</p>
 							</div>
 						</div>
 					</div>
@@ -472,7 +530,7 @@
 					Liliya Drozdyk, head of communications
 				</div>
 			</div>
-			2024© • <a href="">Privacy</a> and <a href="">cookie policy</a>
+			<div class="col-md-4 policies-notice">2024© <span class="d-none d-md-inline-block">• </span><div class="d-block d-md-none"></div><a href="">Privacy</a> and <a href="">cookie policy</a></div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>        
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>    
@@ -481,7 +539,7 @@
 		<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 		<script>
 			var swiper = new Swiper('.people-gallery', {
-			  slidesPerView: 1,
+			  slidesPerView: 1.2,
 			  spaceBetween: 10,
 			  pagination: {
 			    el: '.swiper-pagination',
@@ -500,7 +558,7 @@
 			});
 			
 			         var swiper = new Swiper('.partners-swiper', {
-			  slidesPerView: 1,
+			  slidesPerView: 2,
 			  spaceBetween: 10,
 			  pagination: {
 			    el: '.swiper-pagination',
@@ -581,6 +639,14 @@
 			             });
 			         });
 			         });
+
+                    function openNav() {
+                        document.getElementById("myNav").style.width = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav").style.width = "0%";
+                    }
 			
 			     //     document.addEventListener('DOMContentLoaded', (event) => {
 			     //     let cards = document.querySelectorAll('.card');
