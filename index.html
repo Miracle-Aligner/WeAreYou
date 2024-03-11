@@ -3,15 +3,77 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>We are U</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<title>We are U | Home</title>
+
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles/index.css">
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="styles/swiper_custom_styles.css">
 	</head>
 	<body class="">
-        <nav class="p-md navbar navbar-dark navbar-expand-lg sticky-top">
+		<nav class="d-block d-md-none p-md navbar navbar-dark navbar-expand-lg sticky-top mobile-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="LOGO" height="30"> <!-- Ensure the path to logo is correct -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-collapse-mobile" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto display_normal">
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline" href="#teaser">Teaser</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-line hover-underline" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline" href="#screenings-mobile">Screenings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline" href="#charity">Charity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline" href="#heroes">Heroes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline" href="https://saved.foundation/">SaveED</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eng</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/">Eng</a></li>
+                                <li><a class="dropdown-item" href="/uk">Укр</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		<div class="container-fluid header_container p-md-b">
+			<div class="row no-gutters header align-items-end">
+				<!-- Use 'align-items-end' to align the content to the bottom -->
+				<div class="col">
+					<div class="content">
+						<h1 class="display_bold typing">We are U</h1>
+						<div class="subtitle display_normal">
+							Teens who give us hope
+						</div>
+						<div class="display_normal caption">Documentary film presentation</div>
+                        <br>
+                        <a class="btn btn-primary d-block d-md-none display_bold" href="#screenings-mobile">Register</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<nav class="d-none d-md-block p-md navbar navbar-dark navbar-expand-lg sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="img/logo.png" alt="LOGO" height="30"> <!-- Ensure the path to logo is correct -->
@@ -34,42 +96,25 @@
                             <a class="nav-link" href="#charity">Charity</a>
                         </li>
                         <li class="nav-item hover-underline">
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#heroes">Heroes</a>
                         </li>
                         <li class="nav-item hover-underline">
-                            <a class="nav-link" href="#saveED">SaveED</a>
+                            <a class="nav-link" href="https://saved.foundation/">SaveED</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eng</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#eng">Eng</a></li>
-                                <li><a class="dropdown-item" href="#ukr">Укр</a></li>
+                                <li><a class="dropdown-item" href="/">Eng</a></li>
+                                <li><a class="dropdown-item" href="/uk">Укр</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-primary" href="#register">Register</a>
+                            <a class="btn btn-primary" href="#screenings">Register</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-		<div class="container-fluid header_container p-md-b">
-			<div class="row no-gutters header align-items-end">
-				<!-- Use 'align-items-end' to align the content to the bottom -->
-				<div class="col">
-					<div class="content">
-						<h1 class="display_bold">We are U</h1>
-						<div class="subtitle display_normal">
-							Teens who give us hope
-						</div>
-						<div class="display_normal caption">Documentary film presentation</div>
-                        <br>
-                        <a class="btn btn-primary d-block d-md-none display_bold" href="#register">Register</a>
-					</div>
-					
-				</div>
-			</div>
-		</div>
 		<div class="container-fluid" id="teaser">
 			<div class="row teaser align-items-center justify-content-center p-md">
 				<div class="text-center col-md-8 embed-responsive embed-responsive-4by3">
@@ -152,19 +197,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 part-2 d-flex justify-content-center align-items-center">
+				<div class="d-none d-md-block col-md-6 part-2 d-flex justify-content-center align-items-center">
 					<div class="container-fluid">
-						<div class="row about-video align-items-center justify-content-center">
-							<div class="text-center embed-responsive embed-responsive-4by3">
-								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/C5Gm8UvxKlU" allowfullscreen></iframe>
+						<div class="row about-photo align-items-center justify-content-center">
+							<div class="text-center">
+								<img src="./img/about_temp.png" alt="">
 							</div>
-							<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/C5Gm8UvxKlU?si=oLFIWHtr6rcvCHCd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="heroes-section p-md-l">
+		<div class="heroes-section p-md-l" id="heroes">
 			<h2 class="display_bold">Heroes</h2>
 			<div class="swiper people-gallery">
 				<div class="swiper-wrapper">
@@ -233,11 +277,11 @@
 						</div>
 					</div>
 				</div>
+				<!-- Swiper Pagination -->
+				<div class="swiper-pagination"></div>
 			</div>
-			<!-- Swiper Pagination -->
-			<div class="swiper-pagination"></div>
 		</div>
-		<div class="featured-location" id="charity">
+		<div class="lyceum" id="charity">
 			<div class="row no-gutters">
 				<div class="col-sm-12 col-md-6 part-1 p-md">
 					<div class="text-left">
@@ -251,123 +295,136 @@
 						<a class="btn btn-primary display_bold" href="#donate">Donate</a>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 part-2 d-flex justify-content-center align-items-center p-md-l">
-					<img src="./img/featured_loc_1.png" alt="" class="location-illustration">
+				<div class="col-sm-12 col-md-6 part-2 d-flex justify-content-center align-items-center">
+					<img src="./img/featured_loc_1.png" alt="" class="charity-illustration">
 				</div>
 			</div>
 		</div>
 		<div class="screenings-section screenings-section-md md" id="screenings">
 			<h2 class="display_bold p-md-l">Screenings</h2>
-			<div class="swiper screenings-swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="row screenings-row">
-							<!-- First Column -->
-							<div class="col display_bold screening-card" style="background-image: url(./img/s_london.png);">
-								<div class="screening-preview">
-									<div class="line-one highlight-blue">
-										London
-									</div>
-									<br>
-									<div class="line-two highlight-blue">
-										UK
-									</div>
-									<br>
-									<div class="screening-date highlight">
-										14 March 2024
-									</div>
-								</div>
-							</div>
-							<!-- Second Column with nested rows -->
-							<div class="col display_bold">
-								<div class="row nested-row screening-card" style="background-image: url(./img/s_oxford.png);">
-									<div class="screening-preview">
-										<div class="line-one highlight-blue">
-											Oxford
-										</div>
-										<br>
-										<div class="line-two highlight-blue">
-											UK
-										</div>
-										<br>
-										<div class="screening-date highlight">
-											15 March 2024
-										</div>
-									</div>
-                                    <div class="overlay-content">
-                                        <div class="overlay-inner">
-                                            <!-- Overlay content -->
-                                            <h3>Oксфорд</h3>
-                                            <p class="overlay-details">14 березня, 18:00
-                                                Large Common Room, Коледж Гуденаф
-                                                Mecklenburgh Square, WC1N 2AB
-                                                Лондон, Велика Британія</p>
-                                                <a class="btn btn-primary display_bold" href="#register">
-                                                    Register
-                                                </a>
-                                        </div>
-                                    </div>
-								</div>
-								<div class="row nested-row screening-card" style="background-image: url(./img/s_ucl.png);">
-									<div class="screening-preview">
-										<div class="line-one highlight-blue">
-											UCL
-										</div>
-										<br>
-										<div class="line-two highlight-blue">
-											UK
-										</div>
-										<br>
-										<div class="screening-date highlight">
-											18 March 2024
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Third Column with nested rows -->
-							<div class="col display_bold">
-								<div class="row nested-row screening-card" style="background-image: url(./img/s_blank.png);">
-								</div>
-								<div class="row nested-row screening-card" style="background-image: url(./img/s_lse.png);">
-									<div class="screening-preview">
-										<div class="line-one highlight-blue">
-											LSE
-										</div>
-										<br>
-										<div class="line-two highlight-blue">
-											UK
-										</div>
-										<br>
-										<div class="screening-date highlight">
-											19 March 2024
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Fourth Column -->
-							<div class="col display_bold screening-card" style="background-image: url(./img/s_ny.png);">
-								<div class="screening-preview">
-									<div class="line-one highlight-blue">
-										New-York
-									</div>
-									<br>
-									<div class="line-two highlight-blue">
-										USA
-									</div>
-									<br>
-									<div class="screening-date highlight">
-										13 April 2024
-									</div>
-								</div>
+			<div class="">
+				<div class="row display_bold">
+				  <!-- First Column: London -->
+				  <div class="col-lg-3">
+					<div class="screening-card screening-card-big position-relative" style="background-image: url(./img/s_london.png);">
+					  <div class="screening-preview">
+						<div class="line-one highlight-blue">London</div><br>
+						<div class="line-two highlight-blue">UK</div><br>
+						<div class="screening-date highlight">14 March 2024</div>
+					  </div>
+					  <div class="overlay-content position-absolute bottom-0 start-0 w-100">
+						<div class="overlay-inner">
+						  <h3>London</h3>
+						  <div class="">
+							<p class="overlay-details">Details about the London screening.</p>
+							<a class="btn btn-primary display_bold" href="#register">Register</a>
 							</div>
 						</div>
+					  </div>
 					</div>
+				  </div>
+			  
+				  <!-- Second Column: Half-height cards example -->
+				  <div class="col-lg-6">
+					<div class="row">
+					  <!-- Oxford -->
+					  <div class="col-6">
+						<div class="screening-card position-relative half-height" style="background-image: url(./img/s_oxford.png);">
+						  <!-- Screening Preview for Oxford -->
+						  <div class="screening-preview">
+							<div class="line-one highlight-blue">Oxford</div><br>
+							<div class="line-two highlight-blue">UK</div><br>
+							<div class="screening-date highlight">15 March 2024</div>
+						  </div>
+						  <!-- Overlay content (you can customize this per card as needed) -->
+						  <div class="overlay-content position-absolute bottom-0 start-0 w-100">
+							<div class="overlay-inner">
+								<h3>Oxford</h3>
+								<div class="">
+									<p class="overlay-details">Details about the Oxford screening.</p>
+									<a class="btn btn-primary display_bold" href="#register">Register</a>
+								</div>
+							  </div>
+						  </div>
+						</div>
+					  </div>
+					  <!-- UCL -->
+					  <div class="col-6">
+						<div class="screening-card position-relative half-height" style="background-image: url(./img/s_blank.png);">
+						  
+						</div>
+					  </div>
+					</div>
+					<div class="row">
+						<!-- UCL -->
+						<div class="col-6">
+						  <div class="screening-card position-relative half-height" style="background-image: url(./img/s_ucl.png);">
+							<!-- Screening Preview for UCL -->
+							<div class="screening-preview">
+							  <div class="line-one highlight-blue">UCL</div><br>
+							  <div class="line-two highlight-blue">UK</div><br>
+							  <div class="screening-date highlight">18 March 2024</div>
+							</div>
+							<!-- Overlay content -->
+							<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+								<div class="overlay-inner">
+									<h3>UCL</h3>
+									<div class="">
+										<p class="overlay-details">Details about the UCL screening.</p>
+										<a class="btn btn-primary display_bold" href="#register">Register</a>
+									</div>
+								  </div>
+							</div>
+						  </div>
+						</div>
+						<!-- Oxford -->
+						<div class="col-6">
+						  <div class="screening-card position-relative half-height" style="background-image: url(./img/s_lse.png);">
+							<!-- Screening Preview for Oxford -->
+							<div class="screening-preview">
+							  <div class="line-one highlight-blue">LSE</div><br>
+							  <div class="line-two highlight-blue">UK</div><br>
+							  <div class="screening-date highlight">19 March 2024</div>
+							</div>
+							<!-- Overlay content (you can customize this per card as needed) -->
+							<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+								<div class="overlay-inner">
+									<h3>LSE</h3>
+									<div class="">
+										<p class="overlay-details">Details about the LSE screening.</p>
+										<a class="btn btn-primary display_bold" href="#register">Register</a>
+									</div>
+								  </div>
+							</div>
+						  </div>
+						</div>
+						
+					  </div>
+				  </div>
+				  
+				  <!-- Fourth Column: New-York -->
+				  <div class="col-lg-3">
+					<div class="screening-card screening-card-big position-relative" style="background-image: url(./img/s_ny.png);">
+					  <div class="screening-preview">
+						<div class="line-one highlight-blue">New-York</div><br>
+						<div class="line-two highlight-blue">USA</div><br>
+						<div class="screening-date highlight">13 April 2024</div>
+					  </div>
+					  <div class="overlay-content position-absolute bottom-0 start-0 w-100">
+						<div class="overlay-inner">
+						  <h3>New-York</h3>
+						  <div class="">
+							<p class="overlay-details">Details about the New-York screening.</p>
+							<a class="btn btn-primary display_bold" href="#register">Register</a>
+							</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
 				</div>
-			</div>
-			<!-- Swiper Pagination -->
-			<div class="swiper-pagination"></div>
+			  </div>
 		</div>
-        <div class="screenings-section screenings-section-mobile mobile p-md-l" id="screenings">
+        <div class="screenings-section screenings-section-mobile mobile p-md-l" id="screenings-mobile">
 			<h2 class="display_bold">Screenings</h2>
 			<div class="swiper people-gallery display_bold">
 				<div class="swiper-wrapper">
@@ -418,9 +475,9 @@
 						</div>
 					</div>
 				</div>
+				<!-- Swiper Pagination -->
+				<div class="swiper-pagination"></div>
 			</div>
-			<!-- Swiper Pagination -->
-			<div class="swiper-pagination"></div>
 		</div>
 		<div class="partners-section p-md-l">
 			<h2 class="display_bold">Partners</h2>
@@ -484,49 +541,57 @@
 					<div class="footer-header display_bold">Partnership</div>
 					Want to screen the film at your school, university, or community abroad? <br><br>
 					Reach out to us at <br> <br>
-					<div class="email">info@saved.foundation</div>
+					<a href="mailto:info@saved.foundation"><div class="email">info@saved.foundation</div></a>
 				</div>
 				<div class="col-md-4">
 					<div class="footer-header display_bold">Share our site with your friends</div>
 					<a class="btn btn-primary display_bold" href="#share">
 						Share 
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+						<svg class = "svg-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
 							<path d="M29 13.8L18.8889 4V9.6C8.77778 11 4.44444 18 3 25C6.61111 20.1 11.6667 17.86 18.8889 17.86V23.6L29 13.8Z" fill="white"/>
 						</svg>
 					</a>
 					<div class="footer-header display_bold">Follow us in your social media</div>
 					<div class="follow-links">
-						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-							<g clip-path="url(#clip0_1770_3005)">
-								<path d="M40 20.0008C40 8.95508 31.0457 0.000778198 20 0.000778198C8.9543 0.000778198 0 8.95508 0 20.0008C0 29.9834 7.31371 38.2574 16.875 39.7578V25.782H11.7969V20.0008H16.875V15.5945C16.875 10.582 19.8609 7.81328 24.4293 7.81328C26.6175 7.81328 28.9062 8.2039 28.9062 8.2039V13.1258H26.3843C23.8998 13.1258 23.125 14.6675 23.125 16.2491V20.0008H28.6719L27.7852 25.782H23.125V39.7578C32.6863 38.2574 40 29.9834 40 20.0008Z" fill="white"/>
-							</g>
-							<defs>
-								<clipPath id="clip0_1770_3005">
-									<rect width="40" height="40" fill="white"/>
-								</clipPath>
-							</defs>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-							<rect width="40" height="40" rx="12" fill="white"/>
-							<circle cx="20" cy="20" r="8.25" stroke="black" stroke-width="3.5"/>
-							<circle cx="31.5" cy="8.5" r="2.5" fill="black"/>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-							<path d="M44.9196 12C43.3796 12.7 41.7196 13.16 39.9996 13.38C41.7596 12.32 43.1196 10.64 43.7596 8.62C42.0996 9.62 40.2596 10.32 38.3196 10.72C36.7396 9 34.5196 8 31.9996 8C27.2996 8 23.4596 11.84 23.4596 16.58C23.4596 17.26 23.5396 17.92 23.6796 18.54C16.5596 18.18 10.2196 14.76 5.99959 9.58C5.25959 10.84 4.83959 12.32 4.83959 13.88C4.83959 16.86 6.33959 19.5 8.65959 21C7.23959 21 5.91959 20.6 4.75959 20C4.75959 20 4.75959 20 4.75959 20.06C4.75959 24.22 7.71959 27.7 11.6396 28.48C10.9196 28.68 10.1596 28.78 9.37959 28.78C8.83959 28.78 8.29959 28.72 7.77959 28.62C8.85959 32 11.9996 34.52 15.7796 34.58C12.8596 36.9 9.15959 38.26 5.11959 38.26C4.43959 38.26 3.75959 38.22 3.07959 38.14C6.87959 40.58 11.3996 42 16.2396 42C31.9996 42 40.6596 28.92 40.6596 17.58C40.6596 17.2 40.6596 16.84 40.6396 16.46C42.3196 15.26 43.7596 13.74 44.9196 12Z" fill="white"/>
-						</svg>
+						<a href="https://www.linkedin.com/company/savedschools/" target="_blank">
+							<svg class = "svg-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+								<g clip-path="url(#clip0_1770_3005)">
+									<path d="M40 20.0008C40 8.95508 31.0457 0.000778198 20 0.000778198C8.9543 0.000778198 0 8.95508 0 20.0008C0 29.9834 7.31371 38.2574 16.875 39.7578V25.782H11.7969V20.0008H16.875V15.5945C16.875 10.582 19.8609 7.81328 24.4293 7.81328C26.6175 7.81328 28.9062 8.2039 28.9062 8.2039V13.1258H26.3843C23.8998 13.1258 23.125 14.6675 23.125 16.2491V20.0008H28.6719L27.7852 25.782H23.125V39.7578C32.6863 38.2574 40 29.9834 40 20.0008Z" fill="white"/>
+								</g>
+								<defs>
+									<clipPath id="clip0_1770_3005">
+										<rect width="40" height="40" fill="white"/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+
+						<a href="https://www.instagram.com/savedschools" target="_blank">
+							<svg class = "svg-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+								<rect width="40" height="40" rx="12" fill="white"/>
+								<circle cx="20" cy="20" r="8.25" stroke="black" stroke-width="3.5"/>
+								<circle cx="31.5" cy="8.5" r="2.5" fill="black"/>
+							</svg>
+						</a>
+
+						<a href="https://www.instagram.com/savedschools" target="_blank">
+							<svg class = "svg-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+								<path d="M44.9196 12C43.3796 12.7 41.7196 13.16 39.9996 13.38C41.7596 12.32 43.1196 10.64 43.7596 8.62C42.0996 9.62 40.2596 10.32 38.3196 10.72C36.7396 9 34.5196 8 31.9996 8C27.2996 8 23.4596 11.84 23.4596 16.58C23.4596 17.26 23.5396 17.92 23.6796 18.54C16.5596 18.18 10.2196 14.76 5.99959 9.58C5.25959 10.84 4.83959 12.32 4.83959 13.88C4.83959 16.86 6.33959 19.5 8.65959 21C7.23959 21 5.91959 20.6 4.75959 20C4.75959 20 4.75959 20 4.75959 20.06C4.75959 24.22 7.71959 27.7 11.6396 28.48C10.9196 28.68 10.1596 28.78 9.37959 28.78C8.83959 28.78 8.29959 28.72 7.77959 28.62C8.85959 32 11.9996 34.52 15.7796 34.58C12.8596 36.9 9.15959 38.26 5.11959 38.26C4.43959 38.26 3.75959 38.22 3.07959 38.14C6.87959 40.58 11.3996 42 16.2396 42C31.9996 42 40.6596 28.92 40.6596 17.58C40.6596 17.2 40.6596 16.84 40.6396 16.46C42.3196 15.26 43.7596 13.74 44.9196 12Z" fill="white"/>
+							</svg>
+						</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="footer-header display_bold contact-us-header">Contact us</div>
 					<div class="footer-subheader display_bold">General email</div>
-					<div class="email">saved@savedschools.in.ua</div>
+					<a href="mailto:saved@savedschools.in.ua"><div class="email">saved@savedschools.in.ua</div></a>
 					<div class="footer-subheader display_bold">Partnership</div>
-					<div class="email">sol.savedschools@gmail.com</div>
+					<a href="mailto:sol.savedschools@gmail.com"><div class="email">sol.savedschools@gmail.com</div></a>
 					Olena Severenchuk, director
-					<div class="email">an.savedschools@gmail.com</div>
+					<a href="mailto:an.savedschools@gmail.com"><div class="email">an.savedschools@gmail.com</div></a>
 					Anna Novosad, co-founder
 					<div class="footer-subheader display_bold">Media and communication</div>
-					<div class="email">Ld.savedschools@gmail.com</div>
+					<a href="mailto:Ld.savedschools@gmail.com"><div class="email">Ld.savedschools@gmail.com</div></a>
 					Liliya Drozdyk, head of communications
 				</div>
 			</div>
@@ -538,15 +603,12 @@
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 		<script>
-			var swiper = new Swiper('.people-gallery', {
+			var swiper_people = new Swiper('.people-gallery', {
 			  slidesPerView: 1.2,
 			  spaceBetween: 10,
 			  pagination: {
 			    el: '.swiper-pagination',
-			    clickable: true,
-			    renderBullet: function (index, className) {
-			      return '<span class="' + className + '">' + (index + 1) + '</span>';
-			    },
+			    clickable: true
 			  },
 			  breakpoints: {
 			    // when window width is >= 768px
@@ -557,15 +619,15 @@
 			  }
 			});
 			
-			         var swiper = new Swiper('.partners-swiper', {
+			var swiper_partners = new Swiper('.partners-swiper', {
 			  slidesPerView: 2,
 			  spaceBetween: 10,
+			  autoplay: {
+				delay: 1500,
+				},
 			  pagination: {
 			    el: '.swiper-pagination',
 			    clickable: true,
-			    renderBullet: function (index, className) {
-			      return '<span class="' + className + '">' + (index + 1) + '</span>';
-			    },
 			  },
 			  breakpoints: {
 			    // when window width is >= 768px
@@ -576,15 +638,12 @@
 			  }
 			});
 			
-			         var swiper = new Swiper('.screenings-swiper', {
+			var swiper_screenings = new Swiper('.screenings-swiper', {
 			  slidesPerView: 1,
 			  spaceBetween: 10,
 			  pagination: {
 			    el: '.swiper-pagination',
 			    clickable: true,
-			    renderBullet: function (index, className) {
-			      return '<span class="' + className + '">' + (index + 1) + '</span>';
-			    },
 			  },
 			  breakpoints: {
 			    // when window width is >= 768px
@@ -639,14 +698,44 @@
 			             });
 			         });
 			         });
+					 document.addEventListener('DOMContentLoaded', (event) => {
+						let navbar = document.querySelector('SELECTOR_FOR_YOUR_NAVBAR');
+						if (navbar) {
+							navbar.style.display = 'none'; // Example: Hiding it
+						}
+					});
+					$(document).ready(function () {
+						// Close the navbar when clicking outside of it
+						$(document).click(function (event) {
+							var clickover = $(event.target);
+							var _opened = $(".navbar-collapse-mobile").hasClass("show");
+							if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+								$(".navbar-toggler").click();
+							}
+						});
 
-                    function openNav() {
-                        document.getElementById("myNav").style.width = "100%";
-                    }
+						// Optional: Close the navbar when clicking on a link (useful for single-page applications or if you want it to close upon navigating)
+						$('.navbar-collapse-mobile .nav-item:not(.dropdown) a').on('click', function () {
+							$(".navbar-collapse").collapse('hide');
+						});
+					});
 
-                    function closeNav() {
-                        document.getElementById("myNav").style.width = "0%";
-                    }
+					$(document).ready(function() {
+						var element = $('.typing');
+						var text = "We are U";
+						var index = 0;
+						element[0].innerText = ""
+
+						function type() {
+						if (text && index < text.length) {
+							element.text(element.text() + text.charAt(index));
+							index++;
+							setTimeout(type, 100); // Adjust typing speed
+						}
+						}
+						
+						type(); // Start typing effect
+					});
 			
 			     //     document.addEventListener('DOMContentLoaded', (event) => {
 			     //     let cards = document.querySelectorAll('.card');
