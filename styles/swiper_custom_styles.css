@@ -101,13 +101,11 @@
 .swiper-button-hovered {
     position: relative;
 }
-
 .swiper-pagination {
     padding: 1.25rem;
 }
-
 @media (min-width: 768px) {
     .swiper-pagination {
         padding: 0.8rem;
-    }
+   }
 }

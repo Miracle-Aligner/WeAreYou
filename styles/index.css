@@ -13,19 +13,13 @@
     font-style: normal;
     font-display: swap;
 }
-    
 /* General */
-
 .svg-icon {
-    transition: fill 0.3s ease; 
+    transition: fill 0.3s ease;
 }
-
-a:hover .svg-icon path,
-a:hover .svg-icon rect,
-a:hover .svg-icon circle {
-  fill: #ffcf26;
+a:hover .svg-icon path, a:hover .svg-icon rect, a:hover .svg-icon circle {
+    fill: #ffcf26;
 }
-
 .row, .container-fluid, .row>* {
     margin-right: 0;
     padding-right: 0;
@@ -86,9 +80,7 @@ a:hover .svg-icon circle {
     background-color: #2E47FC;
     color: white;
 }
-
 /* First block */
-
 .header {
     color: white;
     text-align: center;
@@ -117,14 +109,12 @@ a:hover .svg-icon circle {
 h1 {
     font-size: 3.25rem;
 }
-
 .mobile {
     display: block;
 }
 .md {
     display: none;
 }
-
 .subtitle {
     font-size: 1.125rem;
 }
@@ -154,41 +144,37 @@ h1 {
 .navbar-nav {
     background-color: rgba(0, 0, 0, 0);
 }
-
 .navbar-toggler:focus {
     box-shadow: none;
 }
-
-
 @media (min-width: 768px) {
     h1 {
         font-size: 7.2rem;
-    }
+   }
     .mobile {
         display: none;
-    }
+   }
     .md {
         display: block;
-    }
+   }
     .subtitle {
         font-size: 2rem;
-    }
+   }
     .caption, .nav-item, .btn-primary {
         font-size: 1.2rem;
-    }
+   }
     .header_container{
         background-image: url('../img/hero_bg.png');
         background-size: cover;
         background-position-x: center;
-    }
+   }
     .header {
         height: calc(95vh - 4.5rem);
-    }
+   }
 }
 .navbar-toggler {
     border: none;
 }
-
 .navbar-toggler-icon {
     display: inline-block;
     width: 2rem;
@@ -199,11 +185,9 @@ h1 {
     background-position: center;
     background-size: 100%;
 }
-
 .navbar-nav {
     text-align: center;
 }
-
 .nav-item {
     margin-right: 1.6rem;
 }
@@ -227,11 +211,9 @@ h1 {
 .navbar-nav {
     background-color: rgba(0, 0, 0, 0);
 }
-
 .navbar {
     background-color: #2E47FC;
 }
-
 /* Second block */
 .teaser {
     background-color: #FFCF26;
@@ -244,16 +226,15 @@ h1 {
     width: 100%;
     height: 45rem;
 }
-
 @media (min-width: 768px) {
     .teaser {
         padding-top: 2.8rem;
         padding-bottom: 2.8rem;
-    }
+   }
     .embed-responsive-item {
         width: 100%;
         height: 30rem;
-    }
+   }
 }
 /* Third block */
 .context {
@@ -274,17 +255,14 @@ h1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
 .context .stats {
     text-align: left;
     margin-bottom: 1rem;
-
 }
 .context-header {
     font-size: 2rem;
     line-height: 2.5rem;
 }
-
 .stats-number {
     font-size: 3rem;
     line-height: 3.125rem;
@@ -303,57 +281,54 @@ h1 {
 .stats-caption {
     font-size: 1.125rem;
     font-weight: 500;
-    line-height: 1.25rem; 
+    line-height: 1.25rem;
 }
-
 @media (min-width: 768px) {
     .context {
         height: 90vh;
-    }
+   }
     .stats-number {
         font-size: 3.2rem;
         line-height: 4rem;
-    }
+   }
     .stats-text {
         font-size: 2rem;
         line-height: 3rem;
         margin-bottom: 0;
-    }
+   }
     .stats-caption {
         font-weight: bold;
         font-size: 1.6rem;
         line-height: 2.4rem;
-    }
+   }
     .context .part-1 {
         padding-top: 0rem;
         padding-bottom: 0rem;
-    }
+   }
     .context .part-2 {
         padding-top: none;
         padding-bottom: none;
         border: none;
-    }
+   }
     .context .stats {
         text-align: right;
         margin-bottom: 0;
-    }
+   }
     .context-header {
         font-size: 4.8rem;
         line-height: 6rem;
-    }
+   }
     .stats {
         padding-right: 1.2rem;
-    }
+   }
 }
-
 @media (min-width: 768px) {
     .context-caption {
         font-size: 2rem;
         line-height: 3rem;
         font-weight: bold;
-    }
+   }
 }
-
 /* Fourth block */
 .plain-text {
     font-size: 1rem;
@@ -379,11 +354,11 @@ h1 {
     .about .part-2 {
         padding-bottom: 0rem;
         padding-top: 0rem;
-    }
+   }
     .about {
         min-height: 90vh;
         padding-bottom: 0;
-    }
+   }
 }
 /* Fifth block */
 .heroes-section {
@@ -398,7 +373,7 @@ h1 {
         padding-bottom: 0;
         background-color: white;
         color: black;
-    }
+   }
 }
 .gallery-scroll {
     overflow-x: scroll;
@@ -428,43 +403,39 @@ h1 {
     background-color: #F4F4F4;
 }
 .card .card-color-top {
-     background-color: #FFCF26;
+    background-color: #FFCF26;
     height: 18.75rem;
     background-size: cover;
-
 }
-
 .about .text-left {
     padding-top: 3.5rem;
     padding-bottom: 1.5rem;
 }
-
 @media (min-width: 768px) {
     .card .card-color-top {
         height: 15.015rem;
-    }
+   }
     .about .text-left {
         padding-top: 0;
         padding-bottom: 0;
-    }
+   }
     .about {
         height: 90vh;
-    }
+   }
 }
 /* MD devices */
 .card-title {
     font-family: 'Almaz ExtBd';
     font-size: 1.5rem;
     font-weight: 800;
-    line-height: 2.25rem; 
+    line-height: 2.25rem;
 }
 .card-text {
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 2rem; 
+    line-height: 2rem;
 }
-
 @media (min-width: 768px) {
     .card {
         width: 100%;
@@ -500,14 +471,12 @@ h1 {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
 @media (min-width: 768px) {
     .lyceum .part-2 {
         padding-left: 2.8rem;
         padding-right: 0rem;
-    }
+   }
 }
-
 .charity-illustration {
     width: 100%;
 }
@@ -515,38 +484,34 @@ h1 {
 #screenings .screening-card {
     position: relative;
     overflow: hidden;
-  }
-  
-  #screenings  .overlay-content {
+}
+#screenings .overlay-content {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: white; /* Semi-transparent overlay */
+    background: white;
+   /* Semi-transparent overlay */
     color: black;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s, visibility 0s linear 0.5s; /* Smooth transition */
-  }
-  
-  #screenings  .screening-card:hover .overlay-content,
-  #screenings  .screening-card:focus .overlay-content {
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
+   /* Smooth transition */
+}
+#screenings .screening-card:hover .overlay-content, #screenings .screening-card:focus .overlay-content {
     visibility: visible;
     opacity: 1;
     transition-delay: 0s;
-  }
-
-  #screenings .screening-card {
+}
+#screenings .screening-card {
     height: 40vh;
-  }
-  #screenings .screening-card {
+}
+#screenings .screening-card {
     border: 2px solid #2E47FC;
-  }
-
-  #screenings .screening-card-big {
+}
+#screenings .screening-card-big {
     height: 80vh;
-  }
-
+}
 .screenings-section {
     padding-bottom: 1rem;
     background-color: #2E47FC;
@@ -555,25 +520,19 @@ h1 {
     color: white;
     padding-bottom: 1.5rem;
 }
-
 .lyceum .part-1 {
     padding-bottom: 2rem;
 }
-
 .lyceum .part-2 {
     padding-bottom: 3.5rem;
 }
-
 .screening-card .card-color-top {
     height: 18.75rem;
     background-size: cover;
-
 }
-
 .screening-card .card-body {
     padding: 1.5rem;
 }
-
 .screenings-section .screening-card {
     display: flex;
     flex-direction: column;
@@ -583,49 +542,46 @@ h1 {
     border: 0;
     width: 100%;
 }
-
 .screenings-section-md .screening-card {
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
-
 .screenings-section-md .screening-card:hover .overlay-content, .screenings-section-md .screening-card:focus-within .overlay-content {
     visibility: visible;
     opacity: 1;
 }
-
 @media (min-width: 768px) {
     .screenings-section .screening-card .card-body {
         padding: 0;
-    }
-    /* Adjust card width for md devices */
+   }
+   /* Adjust card width for md devices */
     .screenings-section .screening-card:not(:last-child) {
         margin-right: 1rem;
-    }
+   }
     .screenings-section .screening-card {
         width: 100%;
-    }
+   }
     .screenings-section .screening-card .card-color-top {
         height: 15.015rem;
-    }
+   }
     .lyceum .part-1 {
         padding-bottom: 0;
-    }
+   }
     .lyceum {
         min-height: 90vh;
         padding-top: 5rem;
-    }
+   }
     .screenings-section {
         background-color: white;
-    }
+   }
     .screenings-section h2 {
         color: black;
         padding-bottom: 0;
-    }
+   }
     .lyceum .part-2 {
         padding-bottom: 0;
-    }
+   }
 }
 .screenings-row {
     height: 90vh;
@@ -670,11 +626,13 @@ h1 {
     height: 100%;
     background: rgba(255, 255, 255, 1);
     color: black;
-    opacity: 0; /* Start with the item invisible */
-    margin-bottom: -100%; /* Start completely outside the bottom */
-    transition: all 2s ease-in-out; /* Transition for movement and opacity */
+    opacity: 0;
+   /* Start with the item invisible */
+    margin-bottom: -100%;
+   /* Start completely outside the bottom */
+    transition: all 2s ease-in-out;
+   /* Transition for movement and opacity */
 }
-
 .overlay-content .btn {
     justify-content: center;
     align-items: center;
@@ -684,33 +642,28 @@ h1 {
     color: black;
     width: 100%;
 }
-
 .overlay-inner {
     padding: 1.2rem 2.4rem;
 }
-
 .overlay-inner h3 {
     font-size: 1.6rem;
-    line-height: 2.4rem
+    line-height: 2.4rem 
 }
-
 .overlay-details {
     font-family: "Noto Sans", sans-serif;
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.6rem; 
+    line-height: 1.6rem;
 }
-
 .screening-card:hover .overlay-content, .screening-card:focus-within .overlay-content {
     opacity: 1;
-    margin-bottom: 0%; /* End at its natural position */
+    margin-bottom: 0%;
+   /* End at its natural position */
 }
-
 .screenings-section-mobile .card-text {
     color: #4F4F59;
 }
-
 /* Adjust the overlay for touch devices (initially hidden for JS toggle) */
 @media (hover: none) {
     .overlay-content {
@@ -729,7 +682,6 @@ h1 {
     margin-top: auto;
     align-self: flex-end;
 }
-
 /* Eighth block */
 .partners-section {
     padding-top: 5rem;
@@ -737,25 +689,26 @@ h1 {
 }
 .partner-logo {
     padding: 1.8rem;
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    text-align: center;
 }
 .partner-name {
     font-size: 1.2em;
     text-align: center;
+    display: block;
 }
 /* Nineth block */
 .footer {
     background-color: black;
     color: white;
 }
-
 .footer a {
     text-decoration: none;
 }
 .footer a:hover {
     color: #ffcf26!important;
 }
-
 .footer .btn {
     padding: 0.4rem 1.6rem;
     justify-content: center;
@@ -801,17 +754,16 @@ h1 {
 .policies-notice a {
     text-decoration: underline;
 }
-
 .policies-notice {
     text-align: center;
 }
 @media (min-width: 768px) {
     .footer .col-md-4 {
         padding-top: 4rem;
-    }
+   }
     .policies-notice {
         text-align: left;
-    }
+   }
     .footer .btn {
         padding: 0.8rem 1.6rem;
         justify-content: center;
@@ -820,7 +772,7 @@ h1 {
         border: 4px solid white;
         background-color: black;
         margin-bottom: 3.2rem;
-    }
+   }
 }
 .footer a {
     color: white;
@@ -864,14 +816,13 @@ h2 {
     font-size: 2rem;
     line-height: 2.5rem;
 }
-
 @media (min-width: 768px) {
     h2 {
         font-size: 3.2rem;
         font-style: normal;
         font-weight: 800;
         line-height: 4rem;
-    }
+   }
 }
 html, body {
     font-family: "Noto Sans", sans-serif;
@@ -881,7 +832,6 @@ html, body {
     margin: 0px;
     font-size: 16px;
 }
-
 .p-md {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -889,14 +839,12 @@ html, body {
 .p-md-b {
     padding-bottom: 1rem;
 }
-
 .p-md-l {
     padding-left: 1rem;
 }
 .p-md-r {
     padding-right: 1rem;
 }
-
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (landscape phones, 576px and up) */
@@ -910,24 +858,23 @@ html, body {
     .p-sm {
         padding-left: 0rem!important;
         padding-right: 0rem!important;
-    }
+   }
     html, body {
         font-size: 10.67px;
    }
-   .p-md {
+    .p-md {
         padding-left: 2.8rem;
         padding-right: 2.8rem;
-    }
+   }
     .p-md-b {
         padding-bottom: 2.8rem;
-    }
-
+   }
     .p-md-l {
         padding-left: 2.8rem;
-    }
+   }
     .p-md-r {
         padding-right: 2.8rem;
-    }
+   }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
