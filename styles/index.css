@@ -664,6 +664,30 @@ h1 {
 .screenings-section-mobile .card-text {
     color: #4F4F59;
 }
+.screenings-section-mobile .screening-preview {
+    padding: 0;
+}
+
+#screenings .overlay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+   /* Semi-transparent overlay */
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
+   /* Smooth transition */
+}
+#screenings .screening-card:hover .overlay-content, #screenings .screening-card:focus .overlay-content {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
 /* Adjust the overlay for touch devices (initially hidden for JS toggle) */
 @media (hover: none) {
     .overlay-content {
@@ -681,6 +705,10 @@ h1 {
 .overlay-inner > *:not(h3) {
     margin-top: auto;
     align-self: flex-end;
+}
+
+.screenings-section-mobile .swiper-slide:active {
+
 }
 /* Eighth block */
 .partners-section {
