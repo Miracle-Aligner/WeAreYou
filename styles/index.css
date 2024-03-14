@@ -707,9 +707,10 @@ h1 {
     align-self: flex-end;
 }
 
-.screenings-section-mobile .swiper-slide:active {
-
+.screenings-section-mobile .overlay-content {
+    transition: opacity 0.5s, visibility 0s linear 0.1s;
 }
+
 /* Eighth block */
 .partners-section {
     padding-top: 5rem;
