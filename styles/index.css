@@ -459,6 +459,14 @@ h1 {
    }
 }
 /* Sixth block */
+.donate-btn {
+    font-size: 1.2rem;
+}
+@media (min-width: 768px) {
+    .donate-btn {
+        font-size: 1.5rem;
+    }
+}
 .lyceum .location-desc {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -471,6 +479,8 @@ h1 {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+
 @media (min-width: 768px) {
     .lyceum .part-2 {
         padding-left: 2.8rem;
@@ -830,15 +840,6 @@ h1 {
     justify-content: start;
    /* Space content inside card body */
     text-align: left;
-}
-/* Temporary */
-.lyceum .donate-btn {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
 }
 /* FONT SIZES */
 h2 {
