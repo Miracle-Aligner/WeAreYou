@@ -276,11 +276,11 @@ h1 {
     line-height: 1.25rem;
     color: white;
     margin-top: 5vh;
-    font-weight: 500;
+    font-weight: 400;
 }
 .stats-caption {
     font-size: 1.125rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.25rem;
 }
 @media (min-width: 768px) {
@@ -333,7 +333,7 @@ h1 {
 .plain-text {
     font-size: 1rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.4rem;
     letter-spacing: 0.01rem;
 }
@@ -769,7 +769,7 @@ h1 {
 .email {
     font-size: 1.2rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.6rem;
    /* 133.333% */
     text-decoration-line: underline;
@@ -858,7 +858,7 @@ html, body {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0px;
     font-size: 16px;
 }
