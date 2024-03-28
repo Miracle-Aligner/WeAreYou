@@ -160,9 +160,12 @@ h1 {
     .subtitle {
         font-size: 2rem;
    }
-    .caption, .nav-item, .btn-primary {
+    .caption, .btn-primary {
         font-size: 1.2rem;
    }
+   .caption, .nav-item, .btn-primary {
+    font-size: 0.97rem;
+}
     .header_container{
         background-image: url('../img/hero_bg.png');
         background-size: cover;
@@ -189,7 +192,7 @@ h1 {
     text-align: center;
 }
 .nav-item {
-    margin-right: 1.6rem;
+    margin-right: 0.3rem;
 }
 .navigation {
     background-color: #f0f0f0;
@@ -723,7 +726,7 @@ h1 {
 
 /* Eighth block */
 .partners-section {
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 5rem;
 }
 .partner-logo {
