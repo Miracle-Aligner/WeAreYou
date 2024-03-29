@@ -15,6 +15,7 @@
 }
 /* General */
 .svg-icon {
+    margin-right: 1.5rem;
     transition: fill 0.3s ease;
 }
 a:hover .svg-icon path, a:hover .svg-icon rect, a:hover .svg-icon circle {
@@ -421,6 +422,7 @@ h1 {
     .about .text-left {
         padding-top: 0;
         padding-bottom: 0;
+        padding-right: 2rem;
    }
     .about {
         height: 90vh;
@@ -517,13 +519,17 @@ h1 {
     transition-delay: 0s;
 }
 #screenings .screening-card {
-    height: 40vh;
+    height: 42.5vh;
 }
 #screenings .screening-card {
     border: 2px solid #2E47FC;
+    background-position-x: center!important;
+    background-size: cover!important;
 }
 #screenings .screening-card-big {
-    height: 80vh;
+    background-position-x: center!important;
+    background-size: cover!important;
+    height: 85vh;
 }
 .screenings-section {
     padding-bottom: 1rem;
@@ -595,6 +601,16 @@ h1 {
     .lyceum .part-2 {
         padding-bottom: 0;
    }
+   .screening-preview .btn {
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        width: 100%;
+        margin-top: 1rem;
+    }
 }
 .screenings-row {
     height: 90vh;
@@ -611,8 +627,7 @@ h1 {
     padding-bottom: 5rem;
 }
 .screening-preview {
-    padding-left: 2.8rem;
-    padding-bottom: 2rem;
+    padding: 2rem 2.8rem;
 }
 .line-one {
     font-size: 2rem;
@@ -656,7 +671,7 @@ h1 {
     width: 100%;
 }
 .overlay-inner {
-    padding: 1.2rem 2.4rem;
+    padding: 2rem 2.8rem;
 }
 .overlay-inner h3 {
     font-size: 1.6rem;
@@ -668,6 +683,7 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: 1.6rem;
+    margin-bottom: auto;
 }
 .screening-card:hover .overlay-content, .screening-card:focus-within .overlay-content {
     opacity: 1;

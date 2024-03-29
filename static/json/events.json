@@ -1,0 +1,104 @@
+{
+    "lang": "en",
+    "events": [
+        {
+        "city": "New York",
+        "country": "USA",
+        "date": "12 April 2024 3 PM",
+        "details": "82 Columbus Ave, Thornwood, NY 10594"
+        },
+        {
+        "city": "New York",
+        "country": "USA",
+        "date": "13 April 2024",
+        "details": "116th and Broadway, New York, NY 10027"
+        },
+        {
+        "city": "Washington, D.C.",
+        "country": "USA",
+        "date": "15 April 2024 4 PM",
+        "details": "Healy family student center, Herman social room. Format: film screening + Q&A session with the film's characters",
+        "registration_link": "Реєстрація"
+        },
+        {
+        "city": "Washington, D.C.",
+        "country": "USA",
+        "date": "16 March 2024",
+        "details": "Address:1275 K St NW #600, Washington, DC 20005"
+        },
+        {
+        "city": "Virginia",
+        "country": "USA",
+        "date": "17 April 2024 11 AM",
+        "details": "Woodgrove High School Auditorium"
+        },
+        {
+        "city": "Chicago",
+        "country": "USA",
+        "date": "19 April 2024 7 PM",
+        "details": "1500 Kennedy Rd, Lake Forest, IL 60045"
+        },
+        {
+        "city": "Chicago",
+        "country": "USA",
+        "date": "20 April 2024",
+        "details": "5000 North Cumberland Ave Chicago, Illinois 60656"
+        },
+        {
+        "city": "Chicago",
+        "country": "USA",
+        "date": "20 April 2024 12AM",
+        "details": "2200 W Rice St, Chicago, IL 60622"
+        },
+        {
+        "city": "Chicago",
+        "country": "USA",
+        "date": "21 April 2024 1 PM",
+        "details": "Address: 2320 W Chicago Ave, Chicago, IL 60622",
+        "registration_link": "Реєстрація"
+        },
+
+
+      {
+        "image_name": "s_oxford.png",
+        "city": "Oxford",
+        "country": "UK",
+        "date": "15 March 2024",
+        "registration_link": "https://forms.gle/5ZLRQ82dKbCJEH3r6",
+        "details": "Details about the Oxford screening."
+      },
+      {
+        "image_name": "s_ucl.png",
+        "city": "UCL",
+        "country": "UK",
+        "date": "18 March 2024",
+        "registration_link": "#register",
+        "details": "Details about the UCL screening."
+      },
+      {
+        "image_name": "s_lse.png",
+        "city": "LSE",
+        "country": "UK",
+        "date": "19 March 2024",
+        "registration_link": "#register",
+        "details": "Details about the LSE screening."
+      },
+      {
+        "image_name": "s_ny.png",
+        "city": "New-York",
+        "country": "USA",
+        "date": "13 April 2024",
+        "registration_link": "#register",
+        "details": "Details about the New-York screening."
+      }
+      {
+        "image_name": "s_blank.png",
+        "city": "",
+        "country": "",
+        "date": "",
+        "registration_link": "",
+        "details": ""
+      },
+    ]
+  }
+

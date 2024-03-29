@@ -1,0 +1,13 @@
+{
+    "lang": "en",
+    "events": [
+        {
+            "image_name" : "",
+            "city":"<it's content of .line-one class>",
+            "country":"<it's content of .line-two class>",
+            "date":"<it's content of .screening-date class>",
+            "registration_link": "<href from .overlay-inner.btn-primary >",
+            "details" : "<it's content of .overlay-details class>"
+        }
+    ]
+}
