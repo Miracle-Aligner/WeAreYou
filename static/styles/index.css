@@ -93,7 +93,7 @@ a:hover .svg-icon path, a:hover .svg-icon rect, a:hover .svg-icon circle {
     padding-bottom: 3rem;
 }
 .header_container{
-    background-image: url('../img/hero_bg_mob.png');
+    background-image: url('../images/hero_bg_mob.png');
     background-size: cover;
     background-position-x: center;
 }
@@ -168,7 +168,7 @@ h1 {
     font-size: 0.97rem;
 }
     .header_container{
-        background-image: url('../img/hero_bg.png');
+        background-image: url('../images/hero_bg.png');
         background-size: cover;
         background-position-x: center;
    }
@@ -184,7 +184,7 @@ h1 {
     width: 2rem;
     height: 2em;
     vertical-align: middle;
-    background-image: url('../img/Menu.svg');
+    background-image: url('../images/Menu.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -221,7 +221,7 @@ h1 {
 /* Second block */
 .teaser {
     background-color: #FFCF26;
-    background-image: url('../img/teaser_bg.png');
+    background-image: url('../images/teaser_bg.png');
     background-size: cover;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -249,7 +249,7 @@ h1 {
 }
 .context .part-1 {
     background-color: #2E47FC;
-    background-image: url('../img/context_bg.png');
+    background-image: url('../images/context_bg.png');
     background-size: cover;
     padding-top: 3.5rem;
     padding-bottom: 1rem;
@@ -400,7 +400,7 @@ h1 {
     width: 100%;
 }
 .card-body {
-    background: url('../img/gallery_card_bg.png') no-repeat;
+    background: url('../images/gallery_card_bg.png') no-repeat;
    /* Default image background */
     background-position: top;
     background-size: cover;

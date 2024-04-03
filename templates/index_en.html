@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-		<title>Ми. Майбутнє | Домашня сторінка</title>
+		<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+		<title>We are U | Home</title>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="../styles/index.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="../styles/swiper_custom_styles.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles/swiper_custom_styles.css') }}">
 	</head>
 	<body class="">
 		<nav class="d-block d-md-none p-md navbar navbar-dark navbar-expand-lg sticky-top mobile-nav">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					<img src="../img/logo.png" alt="LOGO" height="30"> <!-- Ensure the path to logo is correct -->
+					<img src="{{ url_for('static', filename='images/logo.png') }}" alt="LOGO" height="30"> <!-- Ensure the path to logo is correct -->
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -27,28 +27,28 @@
 				<div class="collapse navbar-collapse navbar-collapse-mobile" id="navbarResponsive">
 					<ul class="navbar-nav ms-auto display_normal">
 						<li class="nav-item">
-							<a class="nav-link hover-underline" href="#teaser">Тизер</a>
+							<a class="nav-link hover-underline" href="#teaser">Teaser</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-line hover-underline" href="#about">Проєкт</a>
+							<a class="nav-line hover-underline" href="#about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link hover-underline" href="#screenings-mobile">Покази</a>
+							<a class="nav-link hover-underline" href="#screenings-mobile">Screenings</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link hover-underline" href="#charity">Благодійність</a>
+							<a class="nav-link hover-underline" href="#charity">Charity</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link hover-underline" href="#heroes">Герої</a>
+							<a class="nav-link hover-underline" href="#heroes">Heroes</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link hover-underline" href="https://saved.foundation/" target="_blank">Фонд</a>
+							<a class="nav-link hover-underline" href="https://saved.foundation/" target="_blank">savED</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Укр</a>
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eng</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="https://miracle-aligner.github.io/WeAreYou/uk/index.html">Укр</a></li>
-								<li><a class="dropdown-item" href="https://miracle-aligner.github.io/WeAreYou/">Eng</a></li>
+								<li><a class="dropdown-item" href="/en">Eng</a></li>
+								<li><a class="dropdown-item" href="/">Укр</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -60,13 +60,13 @@
 				<!-- Use 'align-items-end' to align the content to the bottom -->
 				<div class="col">
 					<div class="content">
-						<h1 class="display_bold typing">Ми. Майбутнє</h1>
+						<h1 class="display_bold typing">We are U</h1>
 						<div class="subtitle display_normal">
-							Відкриємо Україну світові
+							Teens who give us hope
 						</div>
-						<div class="display_normal caption">Презентація документального фільму</div>
+						<div class="display_normal caption">Documentary film presentation</div>
 						<br>
-						<a class="btn btn-primary d-block d-md-none display_bold" href="#screenings-mobile">Зареєструватися</a>
+						<a class="btn btn-primary d-block d-md-none display_bold" href="#screenings-mobile">Register</a>
 					</div>
 				</div>
 			</div>
@@ -74,7 +74,7 @@
 		<nav class="d-none d-md-block p-md navbar navbar-dark navbar-expand-lg sticky-top">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					<img src="../img/logo.png" alt="LOGO" height="52"> <!-- Ensure the path to logo is correct -->
+					<img src="{{ url_for('static', filename='images/logo.png') }}" alt="LOGO" height="52"> <!-- Ensure the path to logo is correct -->
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -82,32 +82,32 @@
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ms-auto display_bold">
 						<li class="nav-item">
-							<a class="nav-link hover-underline" href="#teaser">Тизер</a>
+							<a class="nav-link hover-underline" href="#teaser">Teaser</a>
 						</li>
 						<li class="nav-item hover-underline">
-							<a class="nav-link" href="#about">Проєкт</a>
+							<a class="nav-link" href="#about">About</a>
 						</li>
 						<li class="nav-item hover-underline">
-							<a class="nav-link" href="#screenings">Покази</a>
+							<a class="nav-link" href="#screenings">Screenings</a>
 						</li>
 						<li class="nav-item hover-underline">
-							<a class="nav-link" href="#charity">Благодійність</a>
+							<a class="nav-link" href="#charity">Charity</a>
 						</li>
 						<li class="nav-item hover-underline">
-							<a class="nav-link" href="#heroes">Герої</a>
+							<a class="nav-link" href="#heroes">Heroes</a>
 						</li>
 						<li class="nav-item hover-underline" style="margin-right:6rem;">
-							<a class="nav-link" href="https://saved.foundation/" target="_blank">Фонд</a>
+							<a class="nav-link" href="https://saved.foundation/" target="_blank">savED</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Укр</a>
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eng</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="https://miracle-aligner.github.io/WeAreYou/uk/index.html">Укр</a></li>
-								<li><a class="dropdown-item" href="https://miracle-aligner.github.io/WeAreYou/">Eng</a></li>
+								<li><a class="dropdown-item" href="/en">Eng</a></li>
+								<li><a class="dropdown-item" href="/">Укр</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="btn btn-primary" href="#screenings">Зареєструватися</a>
+							<a class="btn btn-primary" href="#screenings">Register</a>
 						</li>
 					</ul>
 				</div>
@@ -116,17 +116,18 @@
 		<div class="container-fluid" id="teaser">
 			<div class="row teaser align-items-center justify-content-center p-md">
 				<div class="text-center col-md-8 embed-responsive embed-responsive-4by3">
-					<iframe class="embed-responsive-item" type="text/html" src="https://www.youtube.com/embed/krGNsrIOQuc?autoplay=1&mute=1&origin=https://miracle-aligner.github.io/WeAreYou/" allowfullscreen frameborder="0"></iframe>
+					<iframe class="embed-responsive-item" type="text/html" src="https://www.youtube.com/embed/HbMat165bkg?autoplay=1&mute=1&origin=https://miracle-aligner.github.io/WeAreYou/" allowfullscreen frameborder="0"></iframe>
 				</div>
+				<!-- https://www.youtube.com/embed/krGNsrIOQuc -->
 			</div>
 		</div>
 		<div class="container-fluid context display_bold">
 			<div class="row no-gutters">
 				<div class="col-sm-12 col-md-6 part-1 d-flex justify-content-center align-items-center">
 					<div class="text-left p-md">
-						<div class="context-header highlight">Війна проти освіти</div>
+						<div class="context-header highlight">War against Education</div>
 						<div class="context-caption">
-							Росіяни прицільно атакують українські школи, садочки, коледжі та університети
+							Russians are deliberately targeting Ukrainian schools, kindergartens, colleges, and universities
 						</div>
 					</div>
 				</div>
@@ -140,11 +141,11 @@
 								</p>
 								<br>
 								<p class="highlight stats-text">
-									закладів
+									damaged
 								</p>
 							</div>
 							<div class="col-sm-12 col-md-7 stats-caption" style="text-align: left;">
-                                освіти України пошкоджено від 24 лютого 2024
+								institutions in Ukraine since February 24, 2022
 							</div>
 						</div>
 						<div class="row w-100 align-items-center mb-5">
@@ -155,26 +156,26 @@
 								</p>
 								<br>
 								<p class="highlight stats-text">
-									закладів
+									destroyed
 								</p>
 							</div>
 							<div class="col-sm-12 col-md-7 stats-caption" style="text-align: left;">
-								освіти знищено. Це понад 12% від усієї освітньої інфраструктури
+								institutions – this is more than 12% of all educational infrastructure
 							</div>
 						</div>
 						<div class="row w-100 align-items-center">
 							<!-- Make row a flex container with centered items -->
 							<div class="col-sm-12 col-md-5 stats">
 								<p class="highlight stats-number">
-									1 із 7
+									1 in 7
 								</p>
 								<br>
 								<p class="highlight stats-text">
-									шкіл
+									school
 								</p>
 							</div>
 							<div class="col-sm-12 col-md-7 stats-caption" style="text-align: left;">
-								в Україні знищена або пошкоджена внаслідок війни.
+								is either damaged or destroyed.
 							</div>
 						</div>
 					</div>
@@ -185,12 +186,12 @@
 			<div class="row no-gutters justify-content-center align-items-center">
 				<div class="col-sm-12 col-md-6 justify-content-center align-items-center">
 					<div class="text-left">
-						<h2 class="display_bold">Про проєкт</h2>
+						<h2 class="display_bold">About project</h2>
 						<div class="about-caption plain-text">
-							«Ми. Майбутнє» — документальний фільм про п’ятьох українських підлітків та їхніх наставників. Про цілі, що стають реальністю. Про зовсім юне «теперішнє», яке творить гідне «майбутнє». <br><br>
-                            Над створенням стрічки команда savED працювала впродовж пів року. У фільмі глядачі дізнаються історії п’яти підлітків з Харкова, Запоріжжя, Миколаєва, Каховки та Львова.<br><br>
-                            Вони діляться своїм досвідом проживання війни та своїми мріями.<br><br>
-                            А ще — презентують власні проєкти, які створили з допомогою наставників: директора Маріупольського ліцею Андрія Голютяка і вчительки географії з Каховки – пані Наталі Пашковської.<br><br>
+							“WE ARE U” is a documentary film about five Ukrainian teenagers and their mentors. It delves into their goals, transforming into reality. <br><br>
+							Over six months, the savED team was crafting this documentary delving into the stories of five teenagers from Kharkiv, Zaporizhzhia, Mykolayiv, Kakhovka, and Lviv.<br><br>
+							These teenagers are sharing the living-through-war experience as well as their dreams and how-to-make-dreams-come-true projects.<br><br>
+							They will present their projects developed with the help of mentors: Andriy Holiutak, the director of Mariupol Lyceum, and Natalia Pashkovska, a geography teacher from Kakhovka.
 						</div>
 					</div>
 				</div>
@@ -198,7 +199,7 @@
 					<div class="container-fluid">
 						<div class="row about-photo align-items-center justify-content-center">
 							<div class="text-center">
-								<img src="../img/about.jpg" alt="">
+								<img src="{{ url_for('static', filename='images/about.jpg') }}" alt="">
 							</div>
 						</div>
 					</div>
@@ -206,77 +207,70 @@
 			</div>
 		</div>
 		<div class="heroes-section p-md-l" id="heroes">
-			<h2 class="display_bold">Герої</h2>
+			<h2 class="display_bold">Heroes</h2>
 			<div class="swiper people-gallery">
 				<div class="swiper-wrapper">
 					<!-- Swiper Slide (Repeat for each card) -->
 					<div class="swiper-slide">
 						<div class="card">
-							<div class="card-color-top" style="background-image: url(../img/personality_5.png);"></div>
+							<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/personality_5.png') }});"></div>
 							<div class="card-body">
-								<h5 class="card-title">Софія Оніщенко</h5>
-								<p class="card-text">м. Харків<br>
-                                    учениця 11-го класу, МАНівка, фіналист програми Ukraine Global Schilars</p>
+								<h5 class="card-title">Sophia Onishchenko</h5>
+								<p class="card-text">Kharkiv<br>11th-grade student, a finalist in the Ukrainian Global Scholars program</p>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="card">
-							<div class="card-color-top" style="background-image: url(../img/personality_3.png);"></div>
+							<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/personality_3.png') }});"></div>
 							<div class="card-body">
-								<h5 class="card-title">Даніл Арабаджи</h5>
-								<p class="card-text">м. Запоріжжя <br>
-                                    студент 1-го курсу, МАНівець, переможець та призер міжнародніх конкурсів INOVA, KIDE Taiwan та TISF</p>
+								<h5 class="card-title">Danil Arabadzhi</h5>
+								<p class="card-text">Zaporizhzhia<br>1st-year student, a winner and laureate of international competitions INOVA, KIDE Taiwan, and TISF</p>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="card">
-							<div class="card-color-top" style="background-image: url(../img/personality_1.png);"></div>
+							<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/personality_1.png') }});"></div>
 							<div class="card-body">
-								<h5 class="card-title">Дарія Зворигіна</h5>
-								<p class="card-text">м. Миколаїв <br>
-                                    студентка 1-го курсу, співзасновниця ГО “ТУТ”, що займається культурними проектами у Миколаєві</p>
+								<h5 class="card-title">Daria Zvoryhina</h5>
+								<p class="card-text">Mykolaiv<br>1st-year student, co-founder of the NGO “TUT”, which implements cultural projects in Mykolaiv</p>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="card">
-							<div class="card-color-top" style="background-image: url(../img/personality_2.png);"></div>
+							<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/personality_2.png') }});"></div>
 							<div class="card-body">
-								<h5 class="card-title">Дарій Кузьмінський</h5>
-								<p class="card-text">м. Львів <br>
-                                    учень 10-го класу, МАНівець, переможець міжнародних конкурсів INOVA та E-NNOVATE</p>
+								<h5 class="card-title">Darii Kuzminskyi</h5>
+								<p class="card-text">Lviv<br>10th-grade student, winner of international competitions INOVA and E-NNOVATE</p>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="card">
-							<div class="card-color-top" style="background-image: url(../img/personality_4.png);"></div>
+							<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/personality_4.png') }});"></div>
 							<div class="card-body">
-								<h5 class="card-title">Мирослава Трофимчук</h5>
-								<p class="card-text">м. Каховка <br>
-                                    учениця 11-го класу, переможиця Genius Olympiad 2022, фіналістка програми Ukraine Global Scholar</p>
+								<h5 class="card-title">Myroslava Trofymchuk</h5>
+								<p class="card-text">Mariupol<br>11th-grade student, a winner of Genius Olympiad 2022, a finalist in the Ukraine Global Scholars program</p>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="card">
-							<div class="card-color-top" style="background-image: url(../img/personality_7.png);"></div>
+							<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/personality_7.png') }});"></div>
 							<div class="card-body">
-								<h5 class="card-title">Андрій Голютяк</h5>
-								<p class="card-text">м. Маріуполь <br>
-                                    діректор Маріупольського міського ліцею, ментар</p>
+								<h5 class="card-title">Andrii Holiutiak</h5>
+								<p class="card-text">Mariupol<br>Director of Mariupol City Lyceum, mentor</p>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="card">
-							<div class="card-color-top" style="background-image: url(../img/personality_6.png);"></div>
+							<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/personality_6.png') }});"></div>
 							<div class="card-body">
-								<h5 class="card-title">Наталя Пашковська</h5>
-								<p class="card-text"> м. Маріуполь <br>
-                                    вчителька географії та економіки Каховської гімназіїб менторка</p>
+								<h5 class="card-title">Natalia Pashkovska</h5>
+								<p class="card-text">Kakhovka<br>Geography and Economics teacher at Kakhovka Gymnasium, mentor</p>
 							</div>
 						</div>
 					</div>
@@ -287,35 +281,33 @@
 		</div>
 		<div class="lyceum" id="charity">
 			<div class="row no-gutters">
-                <div class="p-md">
-                    <h2 class="highlight display_bold">Збір на Маріупольський ліцей</h2>
-                </div>
-				<div class="col-sm-12 col-md-7 part-1 p-md">
+				<div class="col-sm-12 col-md-6 part-1 p-md">
 					<div class="text-left">
+						<h2 class="highlight display_bold">Mariupol Lyceum</h2>
 						<div class="location-desc">
-                            До великої війни у Маріупольському міському ліцеї навчалися 450 учнів 8-11 класів і працювали 40 викладачів.<br><br>
-                            Через окупацію Маріуполя в 2022 році ліцею довелося релокуватися. Із вересня 2022 року він відновив роботу у школі-інтернаті в Пущі-Водиці на Київщині – йому виділили 1 поверх.<br><br>
-                            Ліцеїсти навчаються в умовах пансіонату: тиждень живуть у ліцеї, а на вихідних їдуть додому. Зараз там здобувають освіту 278 учнів, не тільки з Маріуполя, але й інших тимчасово окупованих міст. <br><br>
-                            <b>Ми прагнемо покращити побутові умови дітей, аби вони змогли комфортно навчатися та проживати в релокованому ліцеї.</b>
+							Before the full-scale invasion, Mariupol City Lyceum had 450 students and employed 40 teachers. <br><br>
+							Due to the russian occupation of Mariupol in 2022, the lyceum had to relocate. Since September 2022, the Lyceum has resumed its operations, in a boarding school in Pushcha-Vodytsia, Kyiv region.<br><br>
+							The students live in a boarding school set up, spending the week in the educational institution and going home on weekends. Currently, 278 students, not only from Mariupol but also from other temporarily occupied cities, are receiving education there.<br><br>
+							<b>Our goal is to improve the living conditions for these children, ensuring they can learn and live comfortably in the relocated lyceum.</b>
 						</div>
-						<a class="btn btn-primary display_bold donate-btn" href="https://saved.foundation/programs/mariupol-lyceum-in-kyiv?payment=general" target="_blank">Підтримати</a>
+						<a class="btn btn-primary display_bold donate-btn" href="https://saved.foundation/programs/mariupol-lyceum-in-kyiv?payment=general" target="_blank">Donate</a>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-5 part-2 d-flex justify-content-center align-items-center">
-					<img src="../img/lyceum.jpg" alt="" class="charity-illustration">
+				<div class="col-sm-12 col-md-6 part-2 d-flex justify-content-center align-items-center">
+					<img src="{{ url_for('static', filename='images/lyceum.jpg') }}" alt="" class="charity-illustration">
 				</div>
 			</div>
 		</div>
 
 		<!-- SCREENINGS MD -->
 		<div class="screenings-section screenings-section-md md" id="screenings">
-			<h2 class="display_bold p-md-l">Покази фільму</h2>
+			<h2 class="display_bold p-md-l">Screenings</h2>
 			<div class="swiper screenings-md-swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="row display_bold">
 							<div class="col-lg-3">
-								<div class="screening-card position-relative screening-card-big" style="background-image: url(./img/s_ef_academy.jpg);">
+								<div class="screening-card position-relative screening-card-big" style="background-image: url({{ url_for('static', filename='images/s_ef_academy.jpg') }});">
 									<div class="screening-preview">
 										<div class="line-one highlight-blue">EF Academy</div>
 										<br>
@@ -341,7 +333,7 @@
 							<div class="col-lg-6">
 								<div class="row">
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url(./img/s_columbia.jpg);">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_columbia.jpg') }});">
 											<div class="screening-preview">
 												<div class="line-one highlight-blue">Columbia University</div>
 												<br>
@@ -365,7 +357,7 @@
 										</div>
 									</div>
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url(./img/s_georgetown.webp);">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_georgetown.webp') }});">
 											<div class="screening-preview">
 												<div class="line-one highlight-blue">Georgetown University</div>
 												<br>
@@ -391,11 +383,11 @@
 								<div class="row">
 									<!--
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url(./img/s_blank.png);">
+										<div class="screening-card position-relative half-height" style="background-image: url(./images/s_blank.png);">
 										</div>
 									</div>-->
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url(./img/s_woodrove.jpg);">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_woodrove.jpg') }});">
 											<div class="screening-preview">
 												<div class="line-one highlight-blue">Woodgrove High School</div>
 												<br>
@@ -419,7 +411,7 @@
 									</div>
 									
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url(./img/s_lake_forest.jpg);">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_lake_forest.jpg') }});">
 											<div class="screening-preview">
 												<div class="line-one highlight-blue">Lake Forest Academy</div>
 												<br>
@@ -444,7 +436,7 @@
 								</div>
 							</div>
 							<div class="col-lg-3">
-								<div class="screening-card screening-card-big position-relative" style="background-image: url(./img/s_metropolitan_Andriy_Sheptytskyi.jpg);">
+								<div class="screening-card screening-card-big position-relative" style="background-image: url({{ url_for('static', filename='images/s_metropolitan_Andriy_Sheptytskyi.jpg') }});">
 									<div class="screening-preview">
 										<div class="line-one highlight-blue">Chicago</div>
 										<br>
@@ -473,7 +465,7 @@
 					<div class="swiper-slide">
 						<div class="row display_bold">
 							<div class="col-lg-3">
-								<div class="screening-card position-relative screening-card-big" style="background-image: url(./img/s_oxford.png);">
+								<div class="screening-card position-relative screening-card-big" style="background-image: url({{ url_for('static', filename='images/s_oxford.png') }});">
 									<div class="screening-preview">
 										<div class="line-one highlight-blue">Oxford</div>
 										<br>
@@ -496,7 +488,7 @@
 							<div class="col-lg-6">
 								<div class="row">
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url(./img/s_ucl.png);">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_ucl.png') }});">
 											<div class="screening-preview">
 												<div class="line-one highlight-blue">UCL</div>
 												<br>
@@ -517,18 +509,18 @@
 										</div>
 									</div>
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url(./img/s_blank.png);">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_blank.png') }});">
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url(./img/s_blank.png);">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_blank.png') }});">
 										</div>
 									</div>
 									
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url(./img/s_lse.png);">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_lse.png') }}/);">
 											<div class="screening-preview">
 												<div class="line-one highlight-blue">LSE</div>
 												<br>
@@ -551,7 +543,7 @@
 								</div>
 							</div>
 							<div class="col-lg-3">
-								<div class="screening-card screening-card-big position-relative" style="background-image: url(./img/s_ny.png);">
+								<div class="screening-card screening-card-big position-relative" style="background-image: url({{ url_for('static', filename='images/s_ny.png') }});">
 									<div class="screening-preview">
 										<div class="line-one highlight-blue">New-York</div>
 										<br>
@@ -580,13 +572,13 @@
 
 		<!--SCREENINGS MOBILE-->
 		<div class="screenings-section screenings-section-mobile mobile p-md-l" id="screenings-mobile">
-			<h2 class="display_bold">Покази фільму</h2>
+			<h2 class="display_bold">Screenings</h2>
 			<div class="swiper screenings-swiper display_bold">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="screening-card">
 							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url(../img/s_oxford.png);"></div>
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_oxford.png') }});"></div>
 								<div class="card-body">
 									<h5 class="card-title">Oxford</h5>
 									<p class="card-text">UK<br>15 March 2024</p>
@@ -607,7 +599,7 @@
 					<div class="swiper-slide">
 						<div class="screening-card">
 							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url(../img/s_ucl.png);"></div>
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_ucl.png') }});"></div>
 								<div class="card-body">
 									<h5 class="card-title">UCL</h5>
 									<p class="card-text">UK<br>18 March 2024</p>
@@ -627,7 +619,7 @@
 					<div class="swiper-slide">
 						<div class="screening-card">
 							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url(../img/s_lse.png);"></div>
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_lse.png') }});"></div>
 								<div class="card-body">
 									<h5 class="card-title">LSE</h5>
 									<p class="card-text">UK<br>19 March 2024</p>
@@ -647,7 +639,7 @@
 					<div class="swiper-slide">
 						<div class="screening-card">
 							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url(../img/s_ny.png);"></div>
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_ny.png') }});"></div>
 								<div class="card-body">
 									<h5 class="card-title">New-York</h5>
 									<p class="card-text">USA<br>13 April 2024</p>
@@ -669,20 +661,20 @@
 			</div>
 		</div>
 		<div class="partners-section p-md-l">
-			<h2 class="display_bold">Партнери</h2>
+			<h2 class="display_bold">Partners</h2>
 			<div class="swiper partners-swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="partner">
-							<img src="../img/logo_mon.png" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_mon.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
-								Мінестерство освіти і науки
+								Ministry of Education & Science
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="partner">
-							<img src="../img/logo_usaid.png" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_usaid.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
 								USAID
 							</div>
@@ -690,7 +682,7 @@
 					</div>
 					<div class="swiper-slide">
 						<div class="partner">
-							<img src="../img/logo_pact.png" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_pact.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
 								Pact
 							</div>
@@ -698,7 +690,7 @@
 					</div>
 					<div class="swiper-slide">
 						<div class="partner">
-							<img src="../img/logo_kinotonly.png" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_kinotonly.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
 								Kinotonly
 							</div>
@@ -707,7 +699,7 @@
 					<div class="swiper-slide">
 
 						<div class="partner">
-							<img src="../img/logo_choose_love.png" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_choose_love.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
 								Choose love
 							</div>
@@ -715,7 +707,7 @@
 					</div>
 					<div class="swiper-slide">
 						<div class="partner">
-							<img src="../img/logo_goodenouh_college.png" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_goodenouh_college.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
 								Goodenough College
 							</div>
@@ -723,7 +715,7 @@
 					</div>
 					<div class="swiper-slide">
 						<div class="partner">
-							<img src="../img/logo_oxford.png" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_oxford.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
 								Oxford University
 							</div>
@@ -731,7 +723,7 @@
 					</div>
 					<div class="swiper-slide">
 						<div class="partner">
-							<img src="../img/logo_ucl.png" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_ucl.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
 								UCL Ukrainian Society
 							</div>
@@ -739,7 +731,7 @@
 					</div>
 					<div class="swiper-slide">
 						<div class="partner">
-							<img src="../img/logo_irex.png" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_irex.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
 								IREX
 							</div>
@@ -747,7 +739,7 @@
 					</div>
 					<div class="swiper-slide">
 						<div class="partner">
-							<img src="../img/logo_kmaf.png" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_kmaf.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
 								KMA Foundation
 							</div>
@@ -759,21 +751,22 @@
 		<div class="footer p-md p-md-b" id="saveED">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="footer-header display_bold">Партнерство</div>
-					Хочете показати фільм у своїй школі, університеті, у своїй громаді закордоном - напишіть нам на пошту <br><br>
+					<div class="footer-header display_bold">Partnership</div>
+					Want to screen the film at your school, university, or community abroad? <br><br>
+					Reach out to us at <br> <br>
 					<a href="mailto:info@saved.foundation" target="_blank">
 						<div class="email">info@saved.foundation</div>
 					</a>
 				</div>
 				<div class="col-md-4">
-					<div class="footer-header display_bold">Розкажи про наш сайт друзям</div>
+					<div class="footer-header display_bold">Share our site with your friends</div>
 					<a class="btn btn-primary display_bold" href="#share">
-						Поширити 
+						Share 
 						<svg class = "svg-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
 							<path d="M29 13.8L18.8889 4V9.6C8.77778 11 4.44444 18 3 25C6.61111 20.1 11.6667 17.86 18.8889 17.86V23.6L29 13.8Z" fill="white"/>
 						</svg>
 					</a>
-					<div class="footer-header display_bold">Стеж за сторінками SavED</div>
+					<div class="footer-header display_bold">Follow us in your social media</div>
 					<div class="follow-links">
 						<a href="https://www.facebook.com/saved.savedschools" target="_blank">
 							<svg class = "svg-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -802,31 +795,31 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="footer-header display_bold contact-us-header">Контакти</div>
-					<div class="footer-subheader display_bold">Загальна скринька</div>
+					<div class="footer-header display_bold contact-us-header">Contact us</div>
+					<div class="footer-subheader display_bold">General</div>
 					<a href="mailto:info@saved.foundation" target="_blank">
 						<div class="email">info@saved.foundation</div>
 					</a>
-					<div class="footer-subheader display_bold">З питань партнерств</div>
+					<div class="footer-subheader display_bold">Partnerships</div>
 					<a href="mailto:o.severenchuk@saved.foundation" target="_blank">
 						<div class="email">o.severenchuk@saved.foundation</div>
 					</a>
-					Оленка Северенчук, директорка
+					Olenka Severenchuk, director
 					<a href="mailto:a.novosad@saved.foundation" target="_blank">
 						<div class="email">a.novosad@saved.foundation</div>
 					</a>
-					Анна Новосад, співзасновниця, стратегічна директорка
-					<div class="footer-subheader display_bold">З питань медіа та комунікацій</div>
+					Anna Novosad, co-founder
+					<div class="footer-subheader display_bold">Media and communications</div>
 					<a href="mailto:info@saved.foundation" target="_blank">
 						<div class="email">info@saved.foundation</div>
 					</a>
-					Лілія Дроздик, керівниця комунікаційного напряму
+					Liliya Drozdyk, head of communications
 				</div>
 			</div>
-			<div class="col-md-6 policies-notice">
+			<div class="col-md-4 policies-notice">
 				2024© <span class="d-none d-md-inline-block">• </span>
 				<div class="d-block d-md-none"></div>
-				<a href="https://saved.foundation/privacy" target="_blank">Політика конфіденційності</a> & <a href="https://saved.foundation/privacy#cookies" target="_blank">політика фалів cookies</a>
+				<a href="https://saved.foundation/privacy" target="_blank">Privacy</a> and <a href="https://saved.foundation/privacy#cookies" target="_blank">cookie policy</a>
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>        
@@ -973,7 +966,7 @@
 			
 					$(document).ready(function() {
 						var element = $('.typing');
-						var text = "Ми. Майбутнє ";
+						var text = "We are U";
 						var index = 0;
 						element[0].innerText = ""
 			
