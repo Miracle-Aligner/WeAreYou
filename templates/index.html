@@ -41,14 +41,17 @@
 						<li class="nav-item">
 							<a class="nav-link hover-underline" href="#heroes">Герої</a>
 						</li>
+						<li class="nav-item hover-underline">
+							<a class="nav-link" href="/projects">Проєкти</a>
+						</li>
 						<li class="nav-item">
 							<a class="nav-link hover-underline" href="https://saved.foundation/" target="_blank">Фонд</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Укр</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="https://miracle-aligner.github.io/WeAreYou/uk/index.html">Укр</a></li>
-								<li><a class="dropdown-item" href="https://miracle-aligner.github.io/WeAreYou/">Eng</a></li>
+								<li><a class="dropdown-item" href="/">Укр</a></li>
+								<li><a class="dropdown-item" href="/en">Eng</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -96,14 +99,17 @@
 						<li class="nav-item hover-underline">
 							<a class="nav-link" href="#heroes">Герої</a>
 						</li>
+						<li class="nav-item hover-underline">
+							<a class="nav-link" href="/projects">Проєкти</a>
+						</li>
 						<li class="nav-item hover-underline" style="margin-right:6rem;">
 							<a class="nav-link" href="https://saved.foundation/" target="_blank">Фонд</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Укр</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="https://miracle-aligner.github.io/WeAreYou/uk/index.html">Укр</a></li>
-								<li><a class="dropdown-item" href="https://miracle-aligner.github.io/WeAreYou/">Eng</a></li>
+								<li><a class="dropdown-item" href="/">Укр</a></li>
+								<li><a class="dropdown-item" href="/en">Eng</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
@@ -116,7 +122,7 @@
 		<div class="container-fluid" id="teaser">
 			<div class="row teaser align-items-center justify-content-center p-md">
 				<div class="text-center col-md-8 embed-responsive embed-responsive-4by3">
-					<iframe class="embed-responsive-item" type="text/html" src="https://www.youtube.com/embed/krGNsrIOQuc?autoplay=1&mute=1&origin=https://movie,saved.foundation" allowfullscreen frameborder="0"></iframe>
+					<iframe class="embed-responsive-item" type="text/html" src="https://www.youtube.com/embed/krGNsrIOQuc?autoplay=1&mute=1&origin=https://movie.saved.foundation" allowfullscreen frameborder="0"></iframe>
 				</div>
 				<!-- https://www.youtube.com/embed/krGNsrIOQuc -->
 			</div>
@@ -206,12 +212,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="heroes-section p-md-l" id="heroes">
-			<h2 class="display_bold">Герої</h2></h2>
+		<div class="heroes-section" id="heroes">
+			<h2 class="display_bold m-md-l">Герої</h2></h2>
 			<div class="swiper people-gallery">
 				<div class="swiper-wrapper">
-					<!-- Swiper Slide (Repeat for each card) -->
-					<div class="swiper-slide">
+					<div class="swiper-slide m-md-l">
 						<div class="card">
 							<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/personality_5.png') }});"></div>
 							<div class="card-body">
@@ -313,6 +318,7 @@
 			<h2 class="display_bold p-md-l">Покази фільму</h2>
 			<div class="swiper screenings-md-swiper">
 				<div class="swiper-wrapper">
+
 					<div class="swiper-slide">
 						<div class="row display_bold">
 							<div class="col-lg-3">
@@ -474,21 +480,21 @@
 					<div class="swiper-slide">
 						<div class="row display_bold">
 							<div class="col-lg-3">
-								<div class="screening-card position-relative screening-card-big" style="background-image: url({{ url_for('static', filename='images/s_oxford.png') }});">
+								<div class="screening-card position-relative screening-card-big" style="background-image: url({{ url_for('static', filename='images/s_ukrainian_school.png') }});">
 									<div class="screening-preview">
-										<div class="line-one highlight-blue">Oxford</div>
+										<div class="line-one highlight-blue">Ukrainian School of Chicago</div>
 										<br>
-										<div class="line-two highlight-blue">UK</div>
+										<div class="line-two highlight-blue">USA</div>
 										<br>
-										<div class="screening-date highlight">15 March 2024</div>
-										<a class="btn btn-primary display_bold" href="#register">Register</a>
+										<div class="screening-date highlight">20TH April, 12АM</div>
+										<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
 									</div>
 									<div class="overlay-content position-absolute bottom-0 start-0 w-100">
 										<div class="overlay-inner">
-											<h3>Oxford</h3>
+											<h3>Ukrainian School of Chicago</h3>
 											<div class="">
-												<p class="overlay-details">Details about the Oxford screening.</p>
-												<a class="btn btn-primary display_bold" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
+												<p class="overlay-details">20TH April, 12АM<br>2200 W Rice St, Chicago, IL 60622<br>Chicago, USA.</p>
+												<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
 											</div>
 										</div>
 									</div>
@@ -497,34 +503,68 @@
 							<div class="col-lg-6">
 								<div class="row">
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_ucl.png') }});">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_ukrainian_school.png') }});">
 											<div class="screening-preview">
-												<div class="line-one highlight-blue">UCL</div>
+												<div class="line-one highlight-blue">UIMA</div>
 												<br>
-												<div class="line-two highlight-blue">UK</div>
+												<div class="line-two highlight-blue">USA</div>
 												<br>
-												<div class="screening-date highlight">18 March 2024</div>
-												<a class="btn btn-primary display_bold" href="#register">Register</a>
+												<div class="screening-date highlight">21TH April, 1PM</div>
+												<a class="btn btn-primary display_bold" href="https://docs.google.com/forms/d/e/1FAIpQLSdwsb_MlkvMgxP14laPbbtOXC_UZqtmVyNGUAGUOQz1Qr9d-Q/viewform?usp=sf_link">Register</a>
 											</div>
 											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
 												<div class="overlay-inner">
-													<h3>UCL</h3>
+													<h3>UIMA</h3>
 													<div class="">
-														<p class="overlay-details">Details about the UCL screening.</p>
-														<a class="btn btn-primary display_bold" href="#register">Register</a>
+														<p class="overlay-details">21TH April, 1PM<br>Address: 2320 W Chicago Ave, Chicago, IL 60622 <br>Chicago, USA</p>
+														<a class="btn btn-primary display_bold" href="https://docs.google.com/forms/d/e/1FAIpQLSdwsb_MlkvMgxP14laPbbtOXC_UZqtmVyNGUAGUOQz1Qr9d-Q/viewform?usp=sf_link">Register</a>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_blank.png') }});">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_oxford.png') }});">
+											<div class="screening-preview">
+												<div class="line-one highlight-blue">Oxford</div>
+												<br>
+												<div class="line-two highlight-blue">UK</div>
+												<br>
+												<div class="screening-date highlight">15 March 2024</div>
+												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
+											</div>
+											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+												<div class="overlay-inner">
+													<h3>Oxford</h3>
+													<div class="">
+														<p class="overlay-details">15TH March, 5PM <br>Lecture theatre, Faculty of History<br>Oxford, Great Britain<br></p>
+														<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_blank.png') }});">
+										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_ucl.png') }});">
+											<div class="screening-preview">
+												<div class="line-one highlight-blue">UCL</div>
+												<br>
+												<div class="line-two highlight-blue">UK</div>
+												<br>
+												<div class="screening-date highlight">19 March 2024</div>
+												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
+											</div>
+											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+												<div class="overlay-inner">
+													<h3>UCL</h3>
+													<div class="">
+														<p class="overlay-details">19TH March, 7PM<br>Harrie Massey lecture theatre, 25 Gordon street<br>London, Great Britain</p>
+														<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 
@@ -536,14 +576,14 @@
 												<div class="line-two highlight-blue">UK</div>
 												<br>
 												<div class="screening-date highlight">19 March 2024</div>
-												<a class="btn btn-primary display_bold" href="#register">Register</a>
+												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
 											</div>
-											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+											<div class="overlay-content position-absolute bottom-0 start-0 w-100 d-none">
 												<div class="overlay-inner">
 													<h3>LSE</h3>
 													<div class="">
 														<p class="overlay-details">Details about the LSE screening.</p>
-														<a class="btn btn-primary display_bold" href="#register">Register</a>
+														<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
 													</div>
 												</div>
 											</div>
@@ -558,15 +598,15 @@
 										<br>
 										<div class="line-two highlight-blue">USA</div>
 										<br>
-										<div class="screening-date highlight">13 April 2024</div>
-										<a class="btn btn-primary display_bold" href="#register">Register</a>
+										<div class="screening-date highlight"></div>
+										<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
 									</div>
-									<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+									<div class="overlay-content position-absolute bottom-0 start-0 w-100 d-none">
 										<div class="overlay-inner">
 											<h3>New-York</h3>
 											<div class="">
-												<p class="overlay-details">Details about the New-York screening.</p>
-												<a class="btn btn-primary display_bold" href="#register">Register</a>
+												<p class="overlay-details"></p>
+												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
 											</div>
 										</div>
 									</div>
@@ -587,6 +627,187 @@
 					<div class="swiper-slide">
 						<div class="screening-card">
 							<div class="screening-preview">
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_ef_academy.jpg') }});"></div>
+								<div class="card-body">
+									<h5 class="card-title">EF Academy</h5>
+									<p class="card-text">USA<br>12TH April, 3 РМ <br>
+								</div>
+
+								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+									<div class="overlay-inner">
+										<h3>EF Academy</h3>
+										<div class="">
+											<p class="overlay-details">12TH April, 3 РМ <br>
+													82 Columbus Ave, Thornwood, NY 10594 <br>
+													New York, USA</p>
+											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="screening-preview">
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_columbia.jpg') }});"></div>
+								<div class="card-body">
+									<h5 class="card-title">Columbia University</h5>
+									<p class="card-text">USA<br>13TH April</p>
+								</div>
+
+								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+									<div class="overlay-inner">
+										<h3>Columbia University</h3>
+										<div class="">
+											<p class="overlay-details">13TH April <br>
+															116th and Broadway, New York, NY 10027 <br>
+															New York, USA</p>
+											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="screening-preview">
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_georgetown.webp') }});"></div>
+								<div class="card-body">
+									<h5 class="card-title">Georgetown University</h5>
+									<p class="card-text">USA<br>15 April 2024, 4PM</p>
+								</div>
+
+								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+									<div class="overlay-inner">
+										<h3>Georgetown University</h3>
+										<div class="">
+											<p class="overlay-details">15TH April, 4 PM <br>
+															Healy family student center, Herman social room <br>, Washington, D.C.</p>
+											<a class="btn btn-primary display_bold" href="https://docs.google.com/forms/d/e/1FAIpQLSfMk-10pQ1_28ZUSV9slC5dIllyHJtBs2Z0BMA7NxUFZeIfWw/viewform?usp=sf_link">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="screening-preview">
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_woodrove.jpg') }});"></div>
+								<div class="card-body">
+									<h5 class="card-title">Woodgrove High School</h5>
+									<p class="card-text">USA<br>17 April 2024, 11 AM</p>
+								</div>
+
+								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+									<div class="overlay-inner">
+										<h3>Woodgrove High School</h3>
+										<div class="">
+											<p class="overlay-details">17TH April, 11 AM <br>
+															Woodgrove High School Auditorium <br>
+															Virginia, USA</p>
+											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="screening-preview">
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_lake_forest.jpg') }});"></div>
+								<div class="card-body">
+									<h5 class="card-title">Lake Forest Academy</h5>
+									<p class="card-text">USA<br>19 April 2024, 7PM</p>
+								</div>
+
+								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+									<div class="overlay-inner">
+										<h3>Lake Forest Academy</h3>
+										<div class="">
+											<p class="overlay-details">19TH April, 7 PM <br>
+															1500 Kennedy Rd, Lake Forest, IL 60045 <br>
+															Chicago, USA
+											</p>
+											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="screening-preview">
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_metropolitan_Andriy_Sheptytskyi.jpg') }});"></div>
+								<div class="card-body">
+									<h5 class="card-title">Chicago</h5>
+									<p class="card-text">USA<br>20 April 2024</p>
+								</div>
+
+								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+									<div class="overlay-inner">
+										<h3>Chicago</h3>
+										<div class="">
+											<p class="overlay-details">Metropolitan Andriy Sheptytskyi School of Ukrainian Studies <br>
+													20TH April <br>
+													5000 North Cumberland Ave Chicago, Illinois 60656 <br>
+													Chicago, USA</p>
+											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="screening-preview">
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_ukrainian_school.png') }});"></div>
+								<div class="card-body">
+									<h5 class="card-title">Ukrainian School of Chicago</h5>
+									<p class="card-text">USA<br>20TH April, 12АM</p>
+								</div>
+
+								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+									<div class="overlay-inner">
+										<h3>Ukrainian School of Chicago</h3>
+										<div class="">
+											<p class="overlay-details">20TH April, 12АM<br>2200 W Rice St, Chicago, IL 60622<br>Chicago, USA.</p>
+											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="screening-preview">
+								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_UIMA.jpg') }});"></div>
+								<div class="card-body">
+									<h5 class="card-title">UIMA</h5>
+									<p class="card-text">USA<br>21TH April, 1PM</p>
+								</div>
+
+								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+									<div class="overlay-inner">
+										<h3>UIMA</h3>
+										<div class="">
+											<p class="overlay-details">21TH April, 1PM<br>Address: 2320 W Chicago Ave, Chicago, IL 60622 <br>Chicago, USA</p>
+											<a class="btn btn-primary display_bold" href="https://docs.google.com/forms/d/e/1FAIpQLSdwsb_MlkvMgxP14laPbbtOXC_UZqtmVyNGUAGUOQz1Qr9d-Q/viewform?usp=sf_link">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="screening-card">
+							<div class="screening-preview">
 								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_oxford.png') }});"></div>
 								<div class="card-body">
 									<h5 class="card-title">Oxford</h5>
@@ -597,8 +818,8 @@
 									<div class="overlay-inner">
 										<h3>Oxford</h3>
 										<div class="">
-											<p class="overlay-details">Details about the Oxford screening.</p>
-											<a class="btn btn-primary display_bold" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
+											<p class="overlay-details">15TH March, 5PM <br>Lecture theatre, Faculty of History<br>Oxford, Great Britain</p>
+											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
 										</div>
 									</div>
 								</div>
@@ -611,14 +832,15 @@
 								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_ucl.png') }});"></div>
 								<div class="card-body">
 									<h5 class="card-title">UCL</h5>
-									<p class="card-text">UK<br>18 March 2024</p>
+									<p class="card-text">UK<br>19 March 2024</p>
 								</div>
+
 								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
 									<div class="overlay-inner">
 										<h3>UCL</h3>
 										<div class="">
-											<p class="overlay-details">Details about the UCL screening.</p>
-											<a class="btn btn-primary display_bold" href="">Register</a>
+											<p class="overlay-details">19TH March, 7PM<br>Harrie Massey lecture theatre, 25 Gordon street<br>London, Great Britain</p>
+											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
 										</div>
 									</div>
 								</div>
@@ -633,12 +855,13 @@
 									<h5 class="card-title">LSE</h5>
 									<p class="card-text">UK<br>19 March 2024</p>
 								</div>
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+
+								<div class="overlay-content position-absolute bottom-0 start-0 w-100 d-none">
 									<div class="overlay-inner">
-										<h3>LSE</h3>
+										<h3>Oxford</h3>
 										<div class="">
-											<p class="overlay-details">Details about the LSE screening.</p>
-											<a class="btn btn-primary display_bold" href="">Register</a>
+											<p class="overlay-details">Details</p>
+											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
 										</div>
 									</div>
 								</div>
@@ -651,14 +874,15 @@
 								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_ny.png') }});"></div>
 								<div class="card-body">
 									<h5 class="card-title">New-York</h5>
-									<p class="card-text">USA<br>13 April 2024</p>
+									<p class="card-text">USA</p>
 								</div>
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+
+								<div class="overlay-content position-absolute bottom-0 start-0 w-100 d-none">
 									<div class="overlay-inner">
-										<h3>New-York</h3>
+										<h3>Oxford</h3>
 										<div class="">
-											<p class="overlay-details">Details about the New-York screening.</p>
-											<a class="btn btn-primary display_bold" href="">Register</a>
+											<p class="overlay-details">Details</p>
+											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
 										</div>
 									</div>
 								</div>
@@ -669,11 +893,11 @@
 				<div class="swiper-pagination"></div>
 			</div>
 		</div>
-		<div class="partners-section p-md-l">
-			<h2 class="display_bold">Партнери</h2>
+		<div class="partners-section">
+			<h2 class="display_bold m-md-l">Партнери</h2>
 			<div class="swiper partners-swiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
+					<div class="swiper-slide m-md-l">
 						<div class="partner">
 							<img src="{{ url_for('static', filename='images/logo_mon.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
@@ -683,17 +907,9 @@
 					</div>
 					<div class="swiper-slide">
 						<div class="partner">
-							<img src="{{ url_for('static', filename='images/logo_usaid.png') }}" alt="" class="partner-logo">
+							<img src="{{ url_for('static', filename='images/logo_USAID_ENGAGE.png') }}" alt="" class="partner-logo">
 							<div class="partner-name display_normal">
-								USAID
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="partner">
-							<img src="{{ url_for('static', filename='images/logo_pact.png') }}" alt="" class="partner-logo">
-							<div class="partner-name display_normal">
-								Pact
+								Програма сприяння громадській активності «Долучайся!»
 							</div>
 						</div>
 					</div>
@@ -922,6 +1138,19 @@
 
 			             // Set all cards to the height of the tallest one
 			             $('.card').height(maxHeight);
+
+			             maxHeight = 0;
+
+			             // Find the tallest card
+			             $('.screenings-section-mobile .screening-card').each(function() {
+			                 var thisHeight = $(this).height();
+			                 if (thisHeight > maxHeight) {
+			                     maxHeight = thisHeight;
+			                 }
+			             });
+
+			             // Set all cards to the height of the tallest one
+			             $('.screenings-section-mobile .screening-card').height(maxHeight);
 			         });
 
 			         document.addEventListener('DOMContentLoaded', function() {

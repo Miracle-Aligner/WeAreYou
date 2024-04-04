@@ -695,6 +695,14 @@ h1 {
 }
 .screenings-section-mobile .screening-preview {
     padding: 0;
+    height: 100%;
+    display: contents;
+}
+
+.screening-card .card-color-top {
+    background-color: #FFCF26;
+    height: 18.75rem;
+    background-size: cover;
 }
 
 #screenings .overlay-content {
@@ -888,8 +896,14 @@ html, body {
 .p-md-b {
     padding-bottom: 1rem;
 }
+.p-md-t {
+    padding-top: 1rem;
+}
 .p-md-l {
     padding-left: 1rem;
+}
+.m-md-l {
+    margin-left: 1rem;
 }
 .p-md-r {
     padding-right: 1rem;
@@ -918,8 +932,14 @@ html, body {
     .p-md-b {
         padding-bottom: 2.8rem;
    }
+   .p-md-t {
+        padding-top: 2.8rem;
+    }
     .p-md-l {
         padding-left: 2.8rem;
+   }
+   .m-md-l {
+        margin-left: 2.8rem;
    }
     .p-md-r {
         padding-right: 2.8rem;

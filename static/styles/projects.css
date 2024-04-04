@@ -1,0 +1,81 @@
+.m-md-l {
+    margin-left: 1rem;
+}
+
+.p-md-right {
+    padding-right: 1rem;
+}
+
+.header_container{
+    background-image: none;
+    background-color: #2E47FC;
+}
+
+.content {
+    text-align: -webkit-left;
+}
+
+.header h1 {
+    font-size: 4.8rem;
+}
+
+#presentations .swiper-slide {
+    text-align: -webkit-center;
+}
+
+.see-all {
+    text-decoration: none;
+    color: black;
+}
+
+.see-all:hover, .see-all:hover .svg-icon path, .see-all:hover .svg-icon rect, .see-all:hover .svg-icon circle {
+    fill: #2E47FC;
+    color: #2E47FC;
+}
+
+.presentations-link {
+    text-align: -webkit-center;
+}
+
+.presentations-intro, .reach-out {
+    color: white;
+    background-color: #2E47FC;
+}
+
+.mailto-link {
+    color: white;
+    text-decoration: none;
+}
+
+.mailto-link:hover {
+    color: #FFCF26;
+}
+
+.reach-out span {
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: 4.8rem;
+    }
+    .p-md-right {
+        padding-right: 45vw;
+    }
+    .header_container{
+        background-image: url('../images/projects_header_bg.png');
+        background-size: cover;
+        background-position-x: center;
+    }
+    .about {
+        height: 90vh!important;
+        min-height: 90vh!important;
+    }
+    .heroes-section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+   }
+    .m-md-l {
+        margin-left: 2.8rem;
+   }
+}
