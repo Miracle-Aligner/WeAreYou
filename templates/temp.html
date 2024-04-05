@@ -1,0 +1,205 @@
+{% for screenings in screenings_collection %}
+						<div class="swiper-slide">
+							<div class="row display_bold">
+								<div class="col-lg-3">
+									<div class="screening-card position-relative screening-card-big" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[0].image_name) }});">
+										<div class="screening-preview">
+											<div class="line-one highlight-blue">
+												{{screenings[0].event_host_institution}}
+											</div>
+											<br>
+											<div class="line-two highlight-blue">
+												{{screenings[0].country}}
+											</div>
+											<br>
+											<div class="screening-date highlight">
+												{{screenings[0].date_time}}
+											</div>
+											<a class="btn btn-primary display_bold {{screenings[0].registration_class}}" href="#register">
+												{{screenings[0].register_button_text}}
+											</a>
+										</div>
+										<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+											<div class="overlay-inner">
+												<h3>{{screenings[0].event_host_institution}}</h3>
+												<div class="">
+													<p class="overlay-details">
+														{{screenings[0].date_time}}<br>
+														{{screenings[0].full_address}}
+													</p>
+													<a class="btn btn-primary display_bold {{screenings[0].registration_class}}" href="{{screenings[0].registration_link}}" target="_blank">{{screenings[0].register_button_text}}</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="row">
+										<div class="col-6">
+											<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[1].image_name) }});">
+												<div class="screening-preview">
+													<div class="line-one highlight-blue">
+														{{screenings[1].event_host_institution}}
+													</div>
+													<br>
+													<div class="line-two highlight-blue">
+														{{screenings[1].country}}
+													</div>
+													<br>
+													<div class="screening-date highlight">
+														{{screenings[1].date_time}}
+													</div>
+													<a class="btn btn-primary display_bold {{screenings[1].registration_class}}" href="#register">
+														{{screenings[1].register_button_text}}
+													</a>
+												</div>
+												<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+													<div class="overlay-inner">
+														<h3>{{screenings[1].event_host_institution}}</h3>
+														<div class="">
+															<p class="overlay-details">
+																{{screenings[1].date_time}}<br>
+																{{screenings[1].full_address}}
+															</p>
+															<a class="btn btn-primary display_bold {{screenings[1].registration_class}}}" href="{{screenings[1].registration_link}}" target="_blank">{{screenings[1].register_button_text}}</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[2].image_name) }});">
+												<div class="screening-preview">
+													<div class="line-one highlight-blue">
+														{{screenings[2].event_host_institution}}
+													</div>
+													<br>
+													<div class="line-two highlight-blue">
+														{{screenings[2].country}}
+													</div>
+													<br>
+													<div class="screening-date highlight">
+														{{screenings[2].date_time}}
+													</div>
+													<a class="btn btn-primary display_bold {{screenings[2].registration_class}}" href="#register">
+														{{screenings[2].register_button_text}}
+													</a>
+												</div>
+												<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+													<div class="overlay-inner">
+														<h3>{{screenings[2].event_host_institution}}</h3>
+														<div class="">
+															<p class="overlay-details">
+																{{screenings[2].date_time}}<br>
+																{{screenings[2].full_address}}
+															</p>
+															<a class="btn btn-primary display_bold {{screenings[2].registration_class}}" href="{{screenings[2].registration_link}}" target="_blank">{{screenings[2].register_button_text}}</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-6">
+											<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[3].image_name) }});">
+												<div class="screening-preview">
+                                                    <div class="line-one highlight-blue">
+                                                        {{screenings[3].event_host_institution}}
+                                                    </div>
+                                                    <br>
+                                                    <div class="line-two highlight-blue">
+                                                        {{screenings[3].country}}
+                                                    </div>
+                                                    <br>
+                                                    <div class="screening-date highlight">
+                                                        {{screenings[3].date_time}}
+                                                    </div>
+                                                    <a class="btn btn-primary display_bold {{screenings[3].registration_class}}" href="#register">
+                                                        {{screenings[3].register_button_text}}
+                                                    </a>
+                                                </div>
+                                                <div class="overlay-content position-absolute bottom-0 start-0 w-100">
+                                                    <div class="overlay-inner">
+                                                        <h3>{{screenings[3].event_host_institution}}</h3>
+                                                        <div class="">
+                                                            <p class="overlay-details">
+                                                                {{screenings[3].date_time}}<br>
+                                                                {{screenings[3].full_address}}
+                                                            </p>
+                                                            <a class="btn btn-primary display_bold {{screenings[3].registration_class}}" href="{{screenings[3].registration_link}}" target="_blank">{{screenings[3].register_button_text}}</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+											</div>
+										</div>
+
+										<div class="col-6">
+											<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[4].image_name) }});">
+												<div class="screening-preview">
+                                                    <div class="line-one highlight-blue">
+                                                        {{screenings[4].event_host_institution}}
+                                                    </div>
+                                                    <br>
+                                                    <div class="line-two highlight-blue">
+                                                        {{screenings[4].country}}
+                                                    </div>
+                                                    <br>
+                                                    <div class="screening-date highlight">
+                                                        {{screenings[4].date_time}}
+                                                    </div>
+                                                    <a class="btn btn-primary display_bold {{screenings[4].registration_class}}" href="#register">
+                                                        {{screenings[4].register_button_text}}
+                                                    </a>
+                                                </div>
+                                                <div class="overlay-content position-absolute bottom-0 start-0 w-100">
+                                                    <div class="overlay-inner">
+                                                        <h3>{{screenings[4].event_host_institution}}</h3>
+                                                        <div class="">
+                                                            <p class="overlay-details">
+                                                                {{screenings[4].date_time}}<br>
+                                                                {{screenings[4].full_address}}
+                                                            </p>
+                                                            <a class="btn btn-primary display_bold {{screenings[4].registration_class}}" href="{{screenings[4].registration_link}}" target="_blank">{{screenings[4].register_button_text}}</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="screening-card screening-card-big position-relative" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[5].image_name) }});">
+										<div class="screening-preview">
+											<div class="line-one highlight-blue">
+												{{screenings[5].event_host_institution}}
+											</div>
+											<br>
+											<div class="line-two highlight-blue">
+												{{screenings[5].country}}
+											</div>
+											<br>
+											<div class="screening-date highlight">
+												{{screenings[5].date_time}}
+											</div>
+											<a class="btn btn-primary display_bold {{screenings[5].registration_class}}" href="#register">
+												{{screenings[5].register_button_text}}
+											</a>
+										</div>
+										<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+											<div class="overlay-inner">
+												<h3>{{screenings[5].event_host_institution}}</h3>
+												<div class="">
+													<p class="overlay-details">
+														{{screenings[5].date_time}}<br>
+														{{screenings[5].full_address}}
+													</p>
+													<a class="btn btn-primary display_bold {{screenings[5].registration_class}}" href="{{screenings[5].registration_link}}" target="_blank">{{screenings[5].register_button_text}}</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					{% endfor %}

@@ -3,11 +3,13 @@
     "events": [
         {
             "image_name" : "",
-            "city":"<it's content of .line-one class>",
-            "country":"<it's content of .line-two class>",
-            "date":"<it's content of .screening-date class>",
-            "registration_link": "<href from .overlay-inner.btn-primary >",
-            "details" : "<it's content of .overlay-details class>"
+            "event_host_institution": "",
+            "country":"",
+            "registration_link": "<true if present, empty otherwise>",
+            "registration_open": "<true if present, false otherwise>",
+            "date" : "",
+            "time": "",
+            "full_address": ""
         }
     ]
 }

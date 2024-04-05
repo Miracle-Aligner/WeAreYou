@@ -304,7 +304,7 @@
                             Ліцеїсти навчаються в умовах пансіонату: тиждень живуть у ліцеї, а на вихідних їдуть додому. Зараз там здобувають освіту 278 учнів, не тільки з Маріуполя, але й інших тимчасово окупованих міст. <br><br>
                             <b>Ми прагнемо покращити побутові умови дітей, аби вони змогли комфортно навчатися та проживати в релокованому ліцеї.</b>
 						</div>
-						<a class="btn btn-primary display_bold donate-btn" href="https://saved.foundation/programs/mariupol-lyceum-in-kyiv?payment=general" target="_blank">Підтримати</a>
+						<a class="btn btn-primary display_bold donate-btn" href="https://saved.foundation/programs/mariupol-lyceum-in-kyiv?payment=program" target="_blank">Підтримати</a>
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-5 part-2 d-flex justify-content-center align-items-center">
@@ -318,302 +318,211 @@
 			<h2 class="display_bold p-md-l">Покази фільму</h2>
 			<div class="swiper screenings-md-swiper">
 				<div class="swiper-wrapper">
-
-					<div class="swiper-slide">
-						<div class="row display_bold">
-							<div class="col-lg-3">
-								<div class="screening-card position-relative screening-card-big" style="background-image: url({{ url_for('static', filename='images/s_ef_academy.jpg') }});">
-									<div class="screening-preview">
-										<div class="line-one highlight-blue">EF Academy</div>
-										<br>
-										<div class="line-two highlight-blue">USA</div>
-										<br>
-										<div class="screening-date highlight">12 April 2024, 3 PM</div>
-										<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-									</div>
-									<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-										<div class="overlay-inner">
-											<h3>New York</h3>
-											<div class="">
-												<p class="overlay-details">12TH April, 3 РМ <br>
-													82 Columbus Ave, Thornwood, NY 10594 <br>
-													New York, USA
+					{% for screenings in screenings_collection %}
+						<div class="swiper-slide">
+							<div class="row display_bold">
+								<div class="col-lg-3">
+									<div class="screening-card position-relative screening-card-big" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[0].image_name) }});">
+										<div class="screening-preview">
+											<div class="line-one highlight-blue">
+												{{screenings[0].event_host_institution}}
+											</div>
+											<br>
+											<div class="line-two highlight-blue">
+												{{screenings[0].country}}
+											</div>
+											<br>
+											<div class="screening-date highlight">
+												{{screenings[0].date_time}}
+											</div>
+											<a class="btn btn-primary display_bold {{screenings[0].registration_class}}" href="#register">
+												{{screenings[0].register_button_text}}
+											</a>
+										</div>
+										<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+											<div class="overlay-inner">
+												<h3>{{screenings[0].event_host_institution}}</h3>
+												<div class="">
+													<p class="overlay-details">
+														{{screenings[0].date_time}}<br>
+														{{screenings[0].full_address}}
 													</p>
-												<a class="btn btn-primary display_bold d-none" href="">Register</a>
+													<a class="btn btn-primary display_bold {{screenings[0].registration_class}}" href="{{screenings[0].registration_link}}" target="_blank">{{screenings[0].register_button_text}}</a>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="row">
-									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_columbia.jpg') }});">
-											<div class="screening-preview">
-												<div class="line-one highlight-blue">Columbia University</div>
-												<br>
-												<div class="line-two highlight-blue">USA</div>
-												<br>
-												<div class="screening-date highlight">13 April 2024</div>
-												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-											</div>
-											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-												<div class="overlay-inner">
-													<h3>New York</h3>
-													<div class="">
-														<p class="overlay-details">13TH April <br>
-															116th and Broadway, New York, NY 10027 <br>
-															New York, USA
+								<div class="col-lg-6">
+									<div class="row">
+										<div class="col-6">
+											<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[1].image_name) }});">
+												<div class="screening-preview">
+													<div class="line-one highlight-blue">
+														{{screenings[1].event_host_institution}}
+													</div>
+													<br>
+													<div class="line-two highlight-blue">
+														{{screenings[1].country}}
+													</div>
+													<br>
+													<div class="screening-date highlight">
+														{{screenings[1].date_time}}
+													</div>
+													<a class="btn btn-primary display_bold {{screenings[1].registration_class}}" href="#register">
+														{{screenings[1].register_button_text}}
+													</a>
+												</div>
+												<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+													<div class="overlay-inner">
+														<h3>{{screenings[1].event_host_institution}}</h3>
+														<div class="">
+															<p class="overlay-details">
+																{{screenings[1].date_time}}<br>
+																{{screenings[1].full_address}}
 															</p>
-														<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
+															<a class="btn btn-primary display_bold {{screenings[1].registration_class}}" href="{{screenings[1].registration_link}}" target="_blank">{{screenings[1].register_button_text}}</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[2].image_name) }});">
+												<div class="screening-preview">
+													<div class="line-one highlight-blue">
+														{{screenings[2].event_host_institution}}
+													</div>
+													<br>
+													<div class="line-two highlight-blue">
+														{{screenings[2].country}}
+													</div>
+													<br>
+													<div class="screening-date highlight">
+														{{screenings[2].date_time}}
+													</div>
+													<a class="btn btn-primary display_bold {{screenings[2].registration_class}}" href="#register">
+														{{screenings[2].register_button_text}}
+													</a>
+												</div>
+												<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+													<div class="overlay-inner">
+														<h3>{{screenings[2].event_host_institution}}</h3>
+														<div class="">
+															<p class="overlay-details">
+																{{screenings[2].date_time}}<br>
+																{{screenings[2].full_address}}
+															</p>
+															<a class="btn btn-primary display_bold {{screenings[2].registration_class}}" href="{{screenings[2].registration_link}}" target="_blank">{{screenings[2].register_button_text}}</a>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_georgetown.webp') }});">
-											<div class="screening-preview">
-												<div class="line-one highlight-blue">Georgetown University</div>
-												<br>
-												<div class="line-two highlight-blue">USA</div>
-												<br>
-												<div class="screening-date highlight">15 April 2024, 4 PM</div>
-												<a class="btn btn-primary display_bold" href="https://docs.google.com/forms/d/e/1FAIpQLSfMk-10pQ1_28ZUSV9slC5dIllyHJtBs2Z0BMA7NxUFZeIfWw/viewform?usp=sf_link" target="_blank">Register</a>
-											</div>
-											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-												<div class="overlay-inner">
-													<h3>Washington, D.C.</h3>
-													<div class="">
-														<p class="overlay-details">15TH April, 4 PM <br>
-															Healy family student center, Herman social room <br>
-														</p>
-														<a class="btn btn-primary display_bold" href="https://docs.google.com/forms/d/e/1FAIpQLSfMk-10pQ1_28ZUSV9slC5dIllyHJtBs2Z0BMA7NxUFZeIfWw/viewform?usp=sf_link" target="_blank">Register</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<!--
-									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url(./images/s_blank.png);">
-										</div>
-									</div>-->
-									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_woodrove.jpg') }});">
-											<div class="screening-preview">
-												<div class="line-one highlight-blue">Woodgrove High School</div>
-												<br>
-												<div class="line-two highlight-blue">USA</div>
-												<br>
-												<div class="screening-date highlight"> 17 April 2024, 11 AM</div>
-												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-											</div>
-											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-												<div class="overlay-inner">
-													<h3>Virginia</h3>
-													<div class="">
-														<p class="overlay-details">17TH April, 11 AM <br>
-															Woodgrove High School Auditorium <br>
-															Virginia, USA</p>
-														<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-													</div>
-												</div>
+									<div class="row">
+										<div class="col-6">
+											<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[3].image_name) }});">
+												<div class="screening-preview">
+                                                    <div class="line-one highlight-blue">
+                                                        {{screenings[3].event_host_institution}}
+                                                    </div>
+                                                    <br>
+                                                    <div class="line-two highlight-blue">
+                                                        {{screenings[3].country}}
+                                                    </div>
+                                                    <br>
+                                                    <div class="screening-date highlight">
+                                                        {{screenings[3].date_time}}
+                                                    </div>
+                                                    <a class="btn btn-primary display_bold {{screenings[3].registration_class}}" href="#register">
+                                                        {{screenings[3].register_button_text}}
+                                                    </a>
+                                                </div>
+                                                <div class="overlay-content position-absolute bottom-0 start-0 w-100">
+                                                    <div class="overlay-inner">
+                                                        <h3>{{screenings[3].event_host_institution}}</h3>
+                                                        <div class="">
+                                                            <p class="overlay-details">
+                                                                {{screenings[3].date_time}}<br>
+                                                                {{screenings[3].full_address}}
+                                                            </p>
+                                                            <a class="btn btn-primary display_bold {{screenings[3].registration_class}}" href="{{screenings[3].registration_link}}" target="_blank">{{screenings[3].register_button_text}}</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
 											</div>
 										</div>
-									</div>
 
-									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_lake_forest.jpg') }});">
-											<div class="screening-preview">
-												<div class="line-one highlight-blue">Lake Forest Academy</div>
-												<br>
-												<div class="line-two highlight-blue">USA</div>
-												<br>
-												<div class="screening-date highlight">19 April 2024, 7 PM</div>
-												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-											</div>
-											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-												<div class="overlay-inner">
-													<h3>Chicago</h3>
-													<div class="">
-														<p class="overlay-details">19TH April, 7 PM <br>
-															1500 Kennedy Rd, Lake Forest, IL 60045 <br>
-															Chicago, USA </p>
-														<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-													</div>
-												</div>
+										<div class="col-6">
+											<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[4].image_name) }});">
+												<div class="screening-preview">
+                                                    <div class="line-one highlight-blue">
+                                                        {{screenings[4].event_host_institution}}
+                                                    </div>
+                                                    <br>
+                                                    <div class="line-two highlight-blue">
+                                                        {{screenings[4].country}}
+                                                    </div>
+                                                    <br>
+                                                    <div class="screening-date highlight">
+                                                        {{screenings[4].date_time}}
+                                                    </div>
+                                                    <a class="btn btn-primary display_bold {{screenings[4].registration_class}}" href="#register">
+                                                        {{screenings[4].register_button_text}}
+                                                    </a>
+                                                </div>
+                                                <div class="overlay-content position-absolute bottom-0 start-0 w-100">
+                                                    <div class="overlay-inner">
+                                                        <h3>{{screenings[4].event_host_institution}}</h3>
+                                                        <div class="">
+                                                            <p class="overlay-details">
+                                                                {{screenings[4].date_time}}<br>
+                                                                {{screenings[4].full_address}}
+                                                            </p>
+                                                            <a class="btn btn-primary display_bold {{screenings[4].registration_class}}" href="{{screenings[4].registration_link}}" target="_blank">{{screenings[4].register_button_text}}</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="screening-card screening-card-big position-relative" style="background-image: url({{ url_for('static', filename='images/s_metropolitan_Andriy_Sheptytskyi.jpg') }});">
-									<div class="screening-preview">
-										<div class="line-one highlight-blue">Chicago</div>
-										<br>
-										<div class="line-two highlight-blue">USA</div>
-										<br>
-										<div class="screening-date highlight">20 April 2024</div>
-										<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-									</div>
-									<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-										<div class="overlay-inner">
-											<h3>Chicago</h3>
-											<div class="">
-												<p class="overlay-details">Metropolitan Andriy Sheptytskyi School of Ukrainian Studies <br>
-													20TH April <br>
-													5000 North Cumberland Ave Chicago, Illinois 60656 <br>
-													Chicago, USA
+								<div class="col-lg-3">
+									<div class="screening-card screening-card-big position-relative" style="background-image: url({{ url_for('static', filename='images/' ~ screenings[5].image_name) }});">
+										<div class="screening-preview">
+											<div class="line-one highlight-blue">
+												{{screenings[5].event_host_institution}}
+											</div>
+											<br>
+											<div class="line-two highlight-blue">
+												{{screenings[5].country}}
+											</div>
+											<br>
+											<div class="screening-date highlight">
+												{{screenings[5].date_time}}
+											</div>
+											<a class="btn btn-primary display_bold {{screenings[5].registration_class}}" href="#register">
+												{{screenings[5].register_button_text}}
+											</a>
+										</div>
+										<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+											<div class="overlay-inner">
+												<h3>{{screenings[5].event_host_institution}}</h3>
+												<div class="">
+													<p class="overlay-details">
+														{{screenings[5].date_time}}<br>
+														{{screenings[5].full_address}}
 													</p>
-												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
+													<a class="btn btn-primary display_bold {{screenings[5].registration_class}}" href="{{screenings[5].registration_link}}" target="_blank">{{screenings[5].register_button_text}}</a>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="row display_bold">
-							<div class="col-lg-3">
-								<div class="screening-card position-relative screening-card-big" style="background-image: url({{ url_for('static', filename='images/s_ukrainian_school.png') }});">
-									<div class="screening-preview">
-										<div class="line-one highlight-blue">Ukrainian School of Chicago</div>
-										<br>
-										<div class="line-two highlight-blue">USA</div>
-										<br>
-										<div class="screening-date highlight">20TH April, 12АM</div>
-										<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-									</div>
-									<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-										<div class="overlay-inner">
-											<h3>Ukrainian School of Chicago</h3>
-											<div class="">
-												<p class="overlay-details">20TH April, 12АM<br>2200 W Rice St, Chicago, IL 60622<br>Chicago, USA.</p>
-												<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="row">
-									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_ukrainian_school.png') }});">
-											<div class="screening-preview">
-												<div class="line-one highlight-blue">UIMA</div>
-												<br>
-												<div class="line-two highlight-blue">USA</div>
-												<br>
-												<div class="screening-date highlight">21TH April, 1PM</div>
-												<a class="btn btn-primary display_bold" href="https://docs.google.com/forms/d/e/1FAIpQLSdwsb_MlkvMgxP14laPbbtOXC_UZqtmVyNGUAGUOQz1Qr9d-Q/viewform?usp=sf_link">Register</a>
-											</div>
-											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-												<div class="overlay-inner">
-													<h3>UIMA</h3>
-													<div class="">
-														<p class="overlay-details">21TH April, 1PM<br>Address: 2320 W Chicago Ave, Chicago, IL 60622 <br>Chicago, USA</p>
-														<a class="btn btn-primary display_bold" href="https://docs.google.com/forms/d/e/1FAIpQLSdwsb_MlkvMgxP14laPbbtOXC_UZqtmVyNGUAGUOQz1Qr9d-Q/viewform?usp=sf_link">Register</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_oxford.png') }});">
-											<div class="screening-preview">
-												<div class="line-one highlight-blue">Oxford</div>
-												<br>
-												<div class="line-two highlight-blue">UK</div>
-												<br>
-												<div class="screening-date highlight">15 March 2024</div>
-												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-											</div>
-											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-												<div class="overlay-inner">
-													<h3>Oxford</h3>
-													<div class="">
-														<p class="overlay-details">15TH March, 5PM <br>Lecture theatre, Faculty of History<br>Oxford, Great Britain<br></p>
-														<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_ucl.png') }});">
-											<div class="screening-preview">
-												<div class="line-one highlight-blue">UCL</div>
-												<br>
-												<div class="line-two highlight-blue">UK</div>
-												<br>
-												<div class="screening-date highlight">19 March 2024</div>
-												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-											</div>
-											<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-												<div class="overlay-inner">
-													<h3>UCL</h3>
-													<div class="">
-														<p class="overlay-details">19TH March, 7PM<br>Harrie Massey lecture theatre, 25 Gordon street<br>London, Great Britain</p>
-														<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-6">
-										<div class="screening-card position-relative half-height" style="background-image: url({{ url_for('static', filename='images/s_lse.png') }}/);">
-											<div class="screening-preview">
-												<div class="line-one highlight-blue">LSE</div>
-												<br>
-												<div class="line-two highlight-blue">UK</div>
-												<br>
-												<div class="screening-date highlight">19 March 2024</div>
-												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-											</div>
-											<div class="overlay-content position-absolute bottom-0 start-0 w-100 d-none">
-												<div class="overlay-inner">
-													<h3>LSE</h3>
-													<div class="">
-														<p class="overlay-details">Details about the LSE screening.</p>
-														<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3">
-								<div class="screening-card screening-card-big position-relative" style="background-image: url({{ url_for('static', filename='images/s_ny.png') }});">
-									<div class="screening-preview">
-										<div class="line-one highlight-blue">New-York</div>
-										<br>
-										<div class="line-two highlight-blue">USA</div>
-										<br>
-										<div class="screening-date highlight"></div>
-										<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-									</div>
-									<div class="overlay-content position-absolute bottom-0 start-0 w-100 d-none">
-										<div class="overlay-inner">
-											<h3>New-York</h3>
-											<div class="">
-												<p class="overlay-details"></p>
-												<a class="btn btn-primary display_bold d-none" href="#register">Register</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					{% endfor %}
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
@@ -624,271 +533,32 @@
 			<h2 class="display_bold">Покази фільму</h2>
 			<div class="swiper screenings-swiper display_bold">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_ef_academy.jpg') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">EF Academy</h5>
-									<p class="card-text">USA<br>12TH April, 3 РМ <br>
-								</div>
+					{% for event in mobile_screenings %}
+						<div class="swiper-slide">
+							<div class="screening-card">
+								<div class="screening-preview">
+									<div class="card-color-top" style="background-image: url({{  url_for('static', filename='images/' ~ event.image_name)  }});"></div>
+									<div class="card-body">
+										<h5 class="card-title">{{event.event_host_institution}}</h5>
+										<p class="card-text">{{event.country}}<br>{{event.date_time}}<br>
+									</div>
 
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-									<div class="overlay-inner">
-										<h3>EF Academy</h3>
-										<div class="">
-											<p class="overlay-details">12TH April, 3 РМ <br>
-													82 Columbus Ave, Thornwood, NY 10594 <br>
-													New York, USA</p>
-											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
+									<div class="overlay-content position-absolute bottom-0 start-0 w-100">
+										<div class="overlay-inner">
+											<h3>{{event.event_host_institution}}</h3>
+											<div class="">
+												<p class="overlay-details">
+													{{event.date_time}}<br>
+													{{event.full_address}}
+												</p>
+												<a class="btn btn-primary display_bold{{event.registration_class}}" href="{{event.registration_link}}" target="_blank">{{event.register_button_text}}</a>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_columbia.jpg') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">Columbia University</h5>
-									<p class="card-text">USA<br>13TH April</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-									<div class="overlay-inner">
-										<h3>Columbia University</h3>
-										<div class="">
-											<p class="overlay-details">13TH April <br>
-															116th and Broadway, New York, NY 10027 <br>
-															New York, USA</p>
-											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_georgetown.webp') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">Georgetown University</h5>
-									<p class="card-text">USA<br>15 April 2024, 4PM</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-									<div class="overlay-inner">
-										<h3>Georgetown University</h3>
-										<div class="">
-											<p class="overlay-details">15TH April, 4 PM <br>
-															Healy family student center, Herman social room <br>, Washington, D.C.</p>
-											<a class="btn btn-primary display_bold" href="https://docs.google.com/forms/d/e/1FAIpQLSfMk-10pQ1_28ZUSV9slC5dIllyHJtBs2Z0BMA7NxUFZeIfWw/viewform?usp=sf_link">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_woodrove.jpg') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">Woodgrove High School</h5>
-									<p class="card-text">USA<br>17 April 2024, 11 AM</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-									<div class="overlay-inner">
-										<h3>Woodgrove High School</h3>
-										<div class="">
-											<p class="overlay-details">17TH April, 11 AM <br>
-															Woodgrove High School Auditorium <br>
-															Virginia, USA</p>
-											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_lake_forest.jpg') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">Lake Forest Academy</h5>
-									<p class="card-text">USA<br>19 April 2024, 7PM</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-									<div class="overlay-inner">
-										<h3>Lake Forest Academy</h3>
-										<div class="">
-											<p class="overlay-details">19TH April, 7 PM <br>
-															1500 Kennedy Rd, Lake Forest, IL 60045 <br>
-															Chicago, USA
-											</p>
-											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_metropolitan_Andriy_Sheptytskyi.jpg') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">Chicago</h5>
-									<p class="card-text">USA<br>20 April 2024</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-									<div class="overlay-inner">
-										<h3>Chicago</h3>
-										<div class="">
-											<p class="overlay-details">Metropolitan Andriy Sheptytskyi School of Ukrainian Studies <br>
-													20TH April <br>
-													5000 North Cumberland Ave Chicago, Illinois 60656 <br>
-													Chicago, USA</p>
-											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_ukrainian_school.png') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">Ukrainian School of Chicago</h5>
-									<p class="card-text">USA<br>20TH April, 12АM</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-									<div class="overlay-inner">
-										<h3>Ukrainian School of Chicago</h3>
-										<div class="">
-											<p class="overlay-details">20TH April, 12АM<br>2200 W Rice St, Chicago, IL 60622<br>Chicago, USA.</p>
-											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_UIMA.jpg') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">UIMA</h5>
-									<p class="card-text">USA<br>21TH April, 1PM</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-									<div class="overlay-inner">
-										<h3>UIMA</h3>
-										<div class="">
-											<p class="overlay-details">21TH April, 1PM<br>Address: 2320 W Chicago Ave, Chicago, IL 60622 <br>Chicago, USA</p>
-											<a class="btn btn-primary display_bold" href="https://docs.google.com/forms/d/e/1FAIpQLSdwsb_MlkvMgxP14laPbbtOXC_UZqtmVyNGUAGUOQz1Qr9d-Q/viewform?usp=sf_link">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_oxford.png') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">Oxford</h5>
-									<p class="card-text">UK<br>15 March 2024</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-									<div class="overlay-inner">
-										<h3>Oxford</h3>
-										<div class="">
-											<p class="overlay-details">15TH March, 5PM <br>Lecture theatre, Faculty of History<br>Oxford, Great Britain</p>
-											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_ucl.png') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">UCL</h5>
-									<p class="card-text">UK<br>19 March 2024</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100">
-									<div class="overlay-inner">
-										<h3>UCL</h3>
-										<div class="">
-											<p class="overlay-details">19TH March, 7PM<br>Harrie Massey lecture theatre, 25 Gordon street<br>London, Great Britain</p>
-											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_lse.png') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">LSE</h5>
-									<p class="card-text">UK<br>19 March 2024</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100 d-none">
-									<div class="overlay-inner">
-										<h3>Oxford</h3>
-										<div class="">
-											<p class="overlay-details">Details</p>
-											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="screening-card">
-							<div class="screening-preview">
-								<div class="card-color-top" style="background-image: url({{ url_for('static', filename='images/s_ny.png') }});"></div>
-								<div class="card-body">
-									<h5 class="card-title">New-York</h5>
-									<p class="card-text">USA</p>
-								</div>
-
-								<div class="overlay-content position-absolute bottom-0 start-0 w-100 d-none">
-									<div class="overlay-inner">
-										<h3>Oxford</h3>
-										<div class="">
-											<p class="overlay-details">Details</p>
-											<a class="btn btn-primary display_bold d-none" href="https://forms.gle/5ZLRQ82dKbCJEH3r6">Register</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					{% endfor %}
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
@@ -990,7 +660,7 @@
 							<path d="M29 13.8L18.8889 4V9.6C8.77778 11 4.44444 18 3 25C6.61111 20.1 11.6667 17.86 18.8889 17.86V23.6L29 13.8Z" fill="white"/>
 						</svg>
 					</a>
-					<div class="footer-header display_bold">Стеж за сторінками SavED</div>
+					<div class="footer-header display_bold">Стеж за сторінками savED</div>
 					<div class="follow-links">
 						<a href="https://www.facebook.com/saved.savedschools" target="_blank">
 							<svg class = "svg-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">

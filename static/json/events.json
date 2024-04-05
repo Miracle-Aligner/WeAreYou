@@ -1,104 +1,338 @@
 {
-    "lang": "en",
-    "events": [
-        {
-        "city": "New York",
-        "country": "USA",
-        "date": "12 April 2024 3 PM",
-        "details": "82 Columbus Ave, Thornwood, NY 10594"
-        },
-        {
-        "city": "New York",
-        "country": "USA",
-        "date": "13 April 2024",
-        "details": "116th and Broadway, New York, NY 10027"
-        },
-        {
-        "city": "Washington, D.C.",
-        "country": "USA",
-        "date": "15 April 2024 4 PM",
-        "details": "Healy family student center, Herman social room. Format: film screening + Q&A session with the film's characters",
-        "registration_link": "Реєстрація"
-        },
-        {
-        "city": "Washington, D.C.",
-        "country": "USA",
-        "date": "16 March 2024",
-        "details": "Address:1275 K St NW #600, Washington, DC 20005"
-        },
-        {
-        "city": "Virginia",
-        "country": "USA",
-        "date": "17 April 2024 11 AM",
-        "details": "Woodgrove High School Auditorium"
-        },
-        {
-        "city": "Chicago",
-        "country": "USA",
-        "date": "19 April 2024 7 PM",
-        "details": "1500 Kennedy Rd, Lake Forest, IL 60045"
-        },
-        {
-        "city": "Chicago",
-        "country": "USA",
-        "date": "20 April 2024",
-        "details": "5000 North Cumberland Ave Chicago, Illinois 60656"
-        },
-        {
-        "city": "Chicago",
-        "country": "USA",
-        "date": "20 April 2024 12AM",
-        "details": "2200 W Rice St, Chicago, IL 60622"
-        },
-        {
-        "city": "Chicago",
-        "country": "USA",
-        "date": "21 April 2024 1 PM",
-        "details": "Address: 2320 W Chicago Ave, Chicago, IL 60622",
-        "registration_link": "Реєстрація"
-        },
-
-
-      {
-        "image_name": "s_oxford.png",
-        "city": "Oxford",
-        "country": "UK",
-        "date": "15 March 2024",
-        "registration_link": "https://forms.gle/5ZLRQ82dKbCJEH3r6",
-        "details": "Details about the Oxford screening."
-      },
-      {
-        "image_name": "s_ucl.png",
-        "city": "UCL",
-        "country": "UK",
-        "date": "18 March 2024",
-        "registration_link": "#register",
-        "details": "Details about the UCL screening."
-      },
-      {
-        "image_name": "s_lse.png",
-        "city": "LSE",
-        "country": "UK",
-        "date": "19 March 2024",
-        "registration_link": "#register",
-        "details": "Details about the LSE screening."
-      },
-      {
-        "image_name": "s_ny.png",
-        "city": "New-York",
-        "country": "USA",
-        "date": "13 April 2024",
-        "registration_link": "#register",
-        "details": "Details about the New-York screening."
-      }
-      {
-        "image_name": "s_blank.png",
-        "city": "",
-        "country": "",
-        "date": "",
-        "registration_link": "",
-        "details": ""
-      },
-    ]
-  }
-
+    "localizations": {
+        "en": [
+            {
+                "register_button_text": "Register",
+                "image_name": "s_warwick.jpg",
+                "event_host_institution": "Warwick University",
+                "country": "UK",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-13",
+                "time": "5 PM",
+                "full_address": "Room 2.004, Warwick Business School, Coventry, Great Britain"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_goodenough.jpg",
+                "event_host_institution": "Goodenough College",
+                "country": "UK",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-14",
+                "time": "6PM",
+                "full_address": "Large Common Room, Mecklenburgh Square, London WC1N 2AB, London, Great Britain"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_oxford.png",
+                "event_host_institution": "Oxford University",
+                "country": "UK",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-15",
+                "time": "5PM",
+                "full_address": "Lecture theatre, Faculty of History, Oxford, Great Britain"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_cambridge.avif",
+                "event_host_institution": "University of Cambridge",
+                "country": "UK",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-16",
+                "time": "6 PM",
+                "full_address": "St Andrew's St, Cambridge CB2 3BU, Cambridge, Great Britain"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_bishops.jpg",
+                "event_host_institution": "Bishop's Stortford College",
+                "country": "UK",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-18",
+                "time": "1 PM",
+                "full_address": "School House, Maze Green Rd, Bishop's Stortford CM23 2PQ, Bishop's Stortford, Great Britain"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_ucl.png",
+                "event_host_institution": "University College London",
+                "country": "UK",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-19",
+                "time": "7 PM",
+                "full_address": "Harrie Massey lecture theatre, 25 Gordon street, London, Great Britain"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_ef_academy.jpg",
+                "event_host_institution": "EF Academy",
+                "country": "USA",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-12",
+                "time": "3 PM",
+                "full_address": "82 Columbus Ave, Thornwood, NY 10594, New York, USA"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_columbia.jpg",
+                "event_host_institution": "Columbia University",
+                "country": "USA",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-13",
+                "time": "",
+                "full_address": "116th and Broadway, New York, NY 10027, New York, USA"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_georgetown.webp",
+                "event_host_institution": "Georgetown University",
+                "country": "USA",
+                "registration_link": "https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSfMk-10pQ1_28ZUSV9slC5dIllyHJtBs2Z0BMA7NxUFZeIfWw/viewform?usp%3Dsf_link&sa=D&source=docs&ust=1712232887807234&usg=AOvVaw1MtDXkYCcmp3ud3wk_afIE",
+                "registration_open": true,
+                "date": "2024-04-15",
+                "time": "4 PM",
+                "full_address": "Healy family student center, Herman social room, Washington, D.C. USA"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_irex.png",
+                "event_host_institution": "IREX office",
+                "country": "USA",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-16",
+                "time": "",
+                "full_address": "1275 K St NW #600, Washington, DC 20005, Washington, D.C. USA"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_woodrove.jpg",
+                "event_host_institution": "Woodgrove High School",
+                "country": "USA",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-17",
+                "time": "11 AM",
+                "full_address": "Woodgrove High School Auditorium, Virginia, USA"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_lake_forest.jpg",
+                "event_host_institution": "Lake Forest Academy",
+                "country": "USA",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-19",
+                "time": "7 pm",
+                "full_address": "1500 Kennedy Rd, Lake Forest, IL 60045, Chicago, USA"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_metropolitan_Andriy_Sheptytskyi.jpg",
+                "event_host_institution": "Metropolitan Andriy Sheptytskyi School of Ukrainian Studies",
+                "country": "USA",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-20",
+                "time": "",
+                "full_address": "5000 North Cumberland Ave Chicago, Illinois 60656, Chicago, USA"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_ukrainian_school.png",
+                "event_host_institution": "Ukrainian School of Chicago",
+                "country": "USA",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-20",
+                "time": "12АM",
+                "full_address": "2200 W Rice St, Chicago, IL 60622, Chicago, USA"
+            },
+            {
+                "register_button_text": "Register",
+                "image_name": "s_UIMA.jpg",
+                "event_host_institution": "UIMA",
+                "country": "USA",
+                "registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSdwsb_MlkvMgxP14laPbbtOXC_UZqtmVyNGUAGUOQz1Qr9d-Q/viewform?usp=sf_link",
+                "registration_open": true,
+                "date": "2024-04-21",
+                "time": "1 PM",
+                "full_address": "2320 W Chicago Ave, Chicago, IL 60622, Chicago, USA"
+            }
+        ],
+        "uk": [
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_warwick.jpg",
+                "event_host_institution": "Warwick University",
+                "country": "Велика Британія",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-15",
+                "time": "17:00",
+                "full_address": "Room 2.004, Warwick Business School, Ковентрі, Велика Британія"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_goodenough.jpg",
+                "event_host_institution": "Goodenough College",
+                "country": "Велика Британія",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-14",
+                "time": "18:00",
+                "full_address": "Large Common Room, Mecklenburgh Square, London WC1N 2AB, Лондон, Велика Британія"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_oxford.png",
+                "event_host_institution": "Oxford University",
+                "country": "Велика Британія",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-15",
+                "time": "17:00",
+                "full_address": "Lecture theatre, Faculty of History, Оксфорд, Велика Британія"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_cambridge.avif",
+                "event_host_institution": "University of Cambridge",
+                "country": "Велика Британія",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-16",
+                "time": "18:00",
+                "full_address": "St Andrew's St, Cambridge CB2 3BU, Кембридж, Велика Британія"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_bishops.jpg",
+                "event_host_institution": "Bishop's Stortford College",
+                "country": "Велика Британія",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-18",
+                "time": "13:00",
+                "full_address": "School House, Maze Green Rd, Bishop's Stortford CM23 2PQ, Бішопс Стортфорд, Велика Британія"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_ucl.png",
+                "event_host_institution": "University College London",
+                "country": "Велика Британія",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-19",
+                "time": "19:00",
+                "full_address": "Harrie Massey lecture theatre, 25 Gordon street, Лондон, Велика Британія"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_ef_academy.jpg",
+                "event_host_institution": "EF Academy",
+                "country": "США",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-12",
+                "time": "13:00",
+                "full_address": "82 Columbus Ave, Thornwood, NY 10594, Нью-Йорк, США"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_columbia.jpg",
+                "event_host_institution": "Columbia University",
+                "country": "США",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-13",
+                "time": "",
+                "full_address": "116th and Broadway, New York, NY 10027, Нью-Йорк, США"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_georgetown.webp",
+                "event_host_institution": "Georgetown University",
+                "country": "США",
+                "registration_link": "https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSfMk-10pQ1_28ZUSV9slC5dIllyHJtBs2Z0BMA7NxUFZeIfWw/viewform?usp%3Dsf_link&sa=D&source=docs&ust=1712232887807234&usg=AOvVaw1MtDXkYCcmp3ud3wk_afIE",
+                "registration_open": true,
+                "date": "2024-04-15",
+                "time": "16:00",
+                "full_address": "Healy family student center, Herman social room, Вашингтон, США"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_irex.png",
+                "event_host_institution": "IREX office",
+                "country": "США",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-03-16",
+                "time": "",
+                "full_address": "1275 K St NW #600, Washington, DC 20005, Вашингтон, США"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_woodrove.jpg",
+                "event_host_institution": "Woodgrove High School",
+                "country": "США",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-17",
+                "time": "11:00",
+                "full_address": "Woodgrove High School Auditorium, Вірджинія, США"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_lake_forest.jpg",
+                "event_host_institution": "Lake Forest Academy",
+                "country": "США",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-19",
+                "time": "",
+                "full_address": "1500 Kennedy Rd, Lake Forest, IL 60045, Чикаго, США"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_metropolitan_Andriy_Sheptytskyi.jpg",
+                "event_host_institution": "Школа Українознавства ім. Митрополита Андрея Шептицького",
+                "country": "США",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-20",
+                "time": "",
+                "full_address": "5000 North Cumberland Ave Chicago, Illinois 60656, Чикаго, США"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_ukrainian_school.png",
+                "event_host_institution": "Школа українознавства ім. В. Стуса в Чикаго",
+                "country": "США",
+                "registration_link": "",
+                "registration_open": false,
+                "date": "2024-04-20",
+                "time": "12:00",
+                "full_address": "2200 W Rice St, Chicago, IL 60622, Чикаго, США"
+            },
+            {
+                "register_button_text": "Зареєструватись",
+                "image_name": "s_UIMA.jpg",
+                "event_host_institution": "Український Інститут Модерного Мистецтва",
+                "country": "США",
+                "registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSdwsb_MlkvMgxP14laPbbtOXC_UZqtmVyNGUAGUOQz1Qr9d-Q/viewform?usp=sf_link",
+                "registration_open": true,
+                "date": "2024-04-21",
+                "time": "14:00",
+                "full_address": "2320 W Chicago Ave, Chicago, IL 60622, Чикаго, США"
+            }
+        ]
+    }
+}
