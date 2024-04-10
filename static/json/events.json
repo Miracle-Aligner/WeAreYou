@@ -83,10 +83,10 @@
                 "image_name": "s_columbia.jpg",
                 "event_host_institution": "Columbia University",
                 "country": "USA",
-                "registration_link": "",
+                "registration_link": "https://docs.google.com/forms/d/1m48oEYMXfGYiMDS1qwfTK86v5K96jYXZJVwIWVRKL3A/edit?usp=drive_web",
                 "registration_open": false,
                 "date": "2024-04-13",
-                "time": "",
+                "time": "6:30 PM",
                 "full_address": "116th and Broadway, New York, NY 10027, New York, USA"
             },
             {
@@ -105,10 +105,10 @@
                 "image_name": "s_irex.png",
                 "event_host_institution": "IREX office",
                 "country": "USA",
-                "registration_link": "",
+                "registration_link": "https://forms.office.com/Pages/ResponsePage.aspx?id=5uCZwdpjvkWO6-dSLAFy0Ux_oWcHaW9JpBVbpw8fGgFURDhGWE5MTVkyQUZCUEhPWjIzNzZVNEsxRS4u\\",
                 "registration_open": false,
-                "date": "2024-03-16",
-                "time": "",
+                "date": "2024-04-16",
+                "time": "2 PM",
                 "full_address": "1275 K St NW #600, Washington, DC 20005, Washington, D.C. USA"
             },
             {
@@ -250,10 +250,10 @@
                 "image_name": "s_columbia.jpg",
                 "event_host_institution": "Columbia University",
                 "country": "США",
-                "registration_link": "",
+                "registration_link": "https://docs.google.com/forms/d/1m48oEYMXfGYiMDS1qwfTK86v5K96jYXZJVwIWVRKL3A/edit?usp=drive_web",
                 "registration_open": false,
                 "date": "2024-04-13",
-                "time": "",
+                "time": "6:30 PM",
                 "full_address": "116th and Broadway, New York, NY 10027, Нью-Йорк, США"
             },
             {
@@ -272,10 +272,10 @@
                 "image_name": "s_irex.png",
                 "event_host_institution": "IREX office",
                 "country": "США",
-                "registration_link": "",
+                "registration_link": "https://forms.office.com/Pages/ResponsePage.aspx?id=5uCZwdpjvkWO6-dSLAFy0Ux_oWcHaW9JpBVbpw8fGgFURDhGWE5MTVkyQUZCUEhPWjIzNzZVNEsxRS4u\\",
                 "registration_open": false,
-                "date": "2024-03-16",
-                "time": "",
+                "date": "2024-04-16",
+                "time": "2 PM",
                 "full_address": "1275 K St NW #600, Washington, DC 20005, Вашингтон, США"
             },
             {
@@ -308,7 +308,7 @@
                 "registration_link": "",
                 "registration_open": false,
                 "date": "2024-04-20",
-                "time": "",
+                "time": "09:00",
                 "full_address": "5000 North Cumberland Ave Chicago, Illinois 60656, Чикаго, США"
             },
             {
@@ -330,7 +330,7 @@
                 "registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSdwsb_MlkvMgxP14laPbbtOXC_UZqtmVyNGUAGUOQz1Qr9d-Q/viewform?usp=sf_link",
                 "registration_open": true,
                 "date": "2024-04-21",
-                "time": "14:00",
+                "time": "13:00",
                 "full_address": "2320 W Chicago Ave, Chicago, IL 60622, Чикаго, США"
             }
         ]
